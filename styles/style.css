@@ -20,55 +20,28 @@ body{
 p{
 	margin: 0 0 20px 0;	
 }
-
 p, ul{
-	font-family: "Kievit",  sans-serif;
+	font-family: Kievit,  sans-serif;
 	font-size-adjust:0.488;
-	font-weight:200;
+	font-weight:normal;
 	font-style:normal;
 	color:#000000;
-}
-
-@font-face {
-	font-family: Kievit;
-	src: url('font/kievit/KIEVITOT-REGULAR.otf');
-}
-
-@font-face {
-	font-family: Kievit;
-	font-weight: bold;
-	src: url('font/kievit/KIEVITOT-BOLD.otf');
-}
-
-@font-face {
-	font-family: Kievit;
-	font-weight: lighter;
-	src: url('font/kievit/KIEVITOT-LIGHT.otf');
 }
 
 img{
 	border: 0;
 }
 
+h1, h2, h3, #pixels{
+	font-family: Kievit, sans-serif;
+	font-weight:bold;
+	font-style:normal;
+}
 h1, #pixels{
-	font-family: "Kievit", sans-serif;
 	font-size-adjust:0.40;
-	font-weight:500;
-	font-style:normal;
 }
-
 h2{
-	font-family: "Kievit", sans-serif;
 	font-size-adjust:0.531;
-	font-weight:500;
-	font-style:normal;
-	color:#000000;
-}
-
-h3{
-	font-family: "Kievit", sans-serif;
-	font-weight:500;
-	font-style:normal;
 }
 
 a{
@@ -95,7 +68,6 @@ ul#nav {
 	margin-top:0px;
 	z-index:400;
 }
-
 ul#nav li{
 	float:left;
 	background-color:#000000;
@@ -103,17 +75,14 @@ ul#nav li{
 	padding : 2px 20px 2px 20px;
 	
 }
-
 ul#nav li a{
 	color:#FFFFFF;
-	font-weight:bold;
+	font-weight:normal;
 }
-
 ul#nav li.logo  {
 	background-color: transparent;
 	padding : 0 0 0 0;
 }
-
 ul#nav li.logo a img{
 	width:200px;
 }
@@ -122,7 +91,6 @@ ul#nav li.logo a img{
 		background-color:#E21D2A;
 		min-height: 40px;
 }
-
 #header h1, #pixels{
 	color: #48941A;
 }
@@ -131,7 +99,6 @@ ul#nav li.logo a img{
 	float: left;	
 	margin: 0 0 0 20px;
 }
-
 .float-right{
 	float: right;
 	margin: 0 20px 0 0;
@@ -162,7 +129,7 @@ ul#nav li.logo a img{
 }
 
 #intro{
-	background: url(images/sub_page_01.jpg) 50% no-repeat fixed;
+	background: url('../images/sub_page_01.jpg') 50% no-repeat fixed;
 	color: white;
 	height: 1200px;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
@@ -170,7 +137,7 @@ ul#nav li.logo a img{
 }
 
 #intro .bg {
-    background: url("images/beer.png") no-repeat fixed 50% 0 transparent;
+    background: url('../images/beer.png') no-repeat fixed 50% 0 transparent;
     height: 1300px;
     margin: 0 auto;
     padding: 0;
@@ -179,7 +146,6 @@ ul#nav li.logo a img{
     /*z-index: 200;*/
     left:61%;
 }
-
 
 #intro .story{
 	color:black;	
@@ -202,7 +168,7 @@ ul{
 }
 
 li.classic ul {
-	background:url(images/arrow_right.png) center right no-repeat;
+	background:url("../images/arrow_right.png") center right no-repeat;
 	border-bottom : 1px dotted;
 	padding-left: 0px;
 	padding-bottom: 10px;
@@ -214,7 +180,7 @@ li.classic ul.last {
 }
 
 li.classic ul:hover {
-	background:url(images/arrow_right.png) center right no-repeat #E0E0E0;
+	background:url("../images/arrow_right.png") center right no-repeat #E0E0E0;
 }
 
 li.beer_who{
@@ -237,11 +203,7 @@ span.event_desc{
 	float:left;
 }
 
-
-
-
-
-
+/* Original part */
 #discover{
 	background-color: #E21D2A;
 	background-position: 50% 0;
@@ -249,9 +211,7 @@ span.event_desc{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
 	background-size: cover;
 }
 
@@ -270,12 +230,10 @@ span.event_desc{
 	padding-left: 32%;
 	font-weight: lighter;
 	margin-top:0px;
-
 }
 
-
 #carioca{
-	background: url(images/sub_page_03.jpg) 50% 0px no-repeat fixed;
+	background: url("../images/sub_page_03.jpg") 50% 0px no-repeat fixed;
 	color: white;
 	height: 1200px;
 	-webkit-background-size: cover;
@@ -297,12 +255,9 @@ span.event_desc{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
 	background-size: cover;
 }
-
 
 .story{
 	margin: 0 auto;
@@ -319,12 +274,10 @@ span.event_desc{
 }
 
 #brewery{
-	background: url(images/sub_page_05.jpg) 50% 0px no-repeat fixed;
+	background: url("../images/sub_page_05.jpg") 50% 0px no-repeat fixed;
 	color: white;
 	height: 1200px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
 	background-size: cover;
 }
 

@@ -1,0 +1,335 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+p{
+	margin: 0 0 20px 0;	
+}
+
+p, ul{
+	font-family: "Kievit",  sans-serif;
+	font-size-adjust:0.488;
+	font-weight:200;
+	font-style:normal;
+	color:#000000;
+}
+
+@font-face {
+	font-family: Kievit;
+	src: url('font/kievit/KIEVITOT-REGULAR.otf');
+}
+
+@font-face {
+	font-family: Kievit;
+	font-weight: bold;
+	src: url('font/kievit/KIEVITOT-BOLD.otf');
+}
+
+@font-face {
+	font-family: Kievit;
+	font-weight: lighter;
+	src: url('font/kievit/KIEVITOT-LIGHT.otf');
+}
+
+img{
+	border: 0;
+}
+
+h1, #pixels{
+	font-family: "Kievit", sans-serif;
+	font-size-adjust:0.40;
+	font-weight:500;
+	font-style:normal;
+}
+
+h2{
+	font-family: "Kievit", sans-serif;
+	font-size-adjust:0.531;
+	font-weight:500;
+	font-style:normal;
+	color:#000000;
+}
+
+h3{
+	font-family: "Kievit", sans-serif;
+	font-weight:500;
+	font-style:normal;
+}
+
+a{
+	text-decoration: none;
+	color:#000000;
+	outline:0;
+}
+
+a:visited{
+	color:#000000;
+}
+
+
+h2.welcome{
+	font-size:40px;
+	font-weight:lighter;
+}
+
+
+ul#nav {
+	position:fixed;
+	list-style:none;
+	padding-left:0px;
+	margin-top:0px;
+	z-index:400;
+}
+
+ul#nav li{
+	float:left;
+	background-color:#000000;
+	margin: 0px 2px 0px 0;	
+	padding : 2px 20px 2px 20px;
+	
+}
+
+ul#nav li a{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul#nav li.logo  {
+	background-color: transparent;
+	padding : 0 0 0 0;
+}
+
+ul#nav li.logo a img{
+	width:200px;
+}
+
+#header {
+		background-color:#E21D2A;
+		min-height: 40px;
+}
+
+#header h1, #pixels{
+	color: #48941A;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+.story{
+	z-index:250;
+}
+
+/*#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}*/
+
+#header, #intro, #discover, #carioca{
+	width: 100%;
+}
+
+#intro{
+	background: url(images/sub_page_01.jpg) 50% no-repeat fixed;
+	color: white;
+	height: 1200px;
+	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
+	background-size: cover;
+}
+
+#intro .bg {
+    background: url("images/beer.png") no-repeat fixed 50% 0 transparent;
+    height: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 240px;
+    /*z-index: 200;*/
+    left:61%;
+}
+
+
+#intro .story{
+	color:black;	
+}
+
+#intro .story .float-left {
+  padding: 170px 100px 0;
+  position: relative;
+  width: 510px;
+}
+
+.three_beers{
+	width:45%;	
+	float:left;
+}
+
+ul{
+	list-style:none;
+	padding-left:0px;
+}
+
+li.classic ul {
+	background:url(images/arrow_right.png) center right no-repeat;
+	border-bottom : 1px dotted;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+li.classic ul.last {
+	border-bottom : none;	
+}
+
+li.classic ul:hover {
+	background:url(images/arrow_right.png) center right no-repeat #E0E0E0;
+}
+
+li.beer_who{
+	color:#CC202F;
+	font-style: italic;
+}
+
+.events{
+	width:45%;	
+	float:left;
+	margin-left:20px;
+}
+
+span.date {
+	color:#CC202F;
+	font-style:italic;
+}
+
+span.event_desc{
+	float:left;
+}
+
+
+
+
+
+
+#discover{
+	background-color: #E21D2A;
+	background-position: 50% 0;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#discover h2, #small h2{
+	color:white;
+	font-size: 60px;
+	font-weight: lighter;
+	padding-left:22%;
+	margin-top: 100px;
+	margin-bottom: 0px;
+}
+
+#discover h3, #small h3{
+	color:white;
+	font-size: 55px;
+	padding-left: 32%;
+	font-weight: lighter;
+	margin-top:0px;
+
+}
+
+
+#carioca{
+	background: url(images/sub_page_03.jpg) 50% 0px no-repeat fixed;
+	color: white;
+	height: 1200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#carioca .story .float-left {
+  padding: 170px 50px 0;
+  position: relative;
+  width: 510px;
+}
+
+#small{
+	background-color: #E21D2A;
+	background-position: 50% 0;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+	margin-left:80px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;
+}
+
+#brewery{
+	background: url(images/sub_page_05.jpg) 50% 0px no-repeat fixed;
+	color: white;
+	height: 1200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#brewery .story .float-left {
+  padding: 170px 50px 0;
+  position: relative;
+  width: 350px;
+}

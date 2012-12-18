@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Brasserie du Lion à Plume</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(900);
+	
+/*	RepositionNav();
+	
+	$(window).resize(function(){
+		RepositionNav();
+	});	
+*/
+	
+	//.parallax(xPosition, adjuster, inertia, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//adjuster - y position to start from
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#discover').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.15);
+	$('#carioca').parallax("50%", 0.1);
+	$('#small').parallax("50%", 0.1);
+	$('#brewer').parallax("50%", 0.1);
+
+})
+</script>
+</head>
+
+<body>
+	
+	
+	<header>
+		<ul id="nav">
+			<li class="logo">
+				<a href="#intro">
+					<img src="images/logo_triangle.png" alt="Lion à Plume" title="Lion à Plume"/>
+				</a>
+			</li> 
+		    <li><a href="#carioca" title="Our beers">OUR-BEERS</a></li>
+		    <li><a href="#brewery" title="The brewery">THE-BREWERY</a></li>
+		    <li><a href="#resellers" title="Resellers">RESELLERS</a></li>
+		    <li><a href="#contact" title="Contact">CONTACT</a></li>
+		</ul>
+	</header>
+
+	<!--div id=header>
+		
+	</div-->
+		
+	<div id="intro"> 		
+			<div class="story"><!--div class="bg"></div-->
+		    	<div class="float-left">
+				<h2 class="welcome">BIENVENUE SUR LE SITE<br/>DE LA BRASSERIE<br/>LION A PLUME</h2>
+				<div class="three_beers">
+					<h3>LES CLASSIQUES</h3>
+					<ul>
+						<li class="classic">
+							<a href="" title="Carioca">
+								<ul>
+								<li class="beer_name">CARIOCA</li>
+								<li class="beer_who">La blanche</li>
+								</ul>
+							</a>
+						</li>
+						
+						<li class="classic">
+							<a href="#metisse" title="Métisse">
+								<ul>
+								<li class="beer_name">METISSE</li>
+								<li class="beer_who">La Saison</li>
+								</ul>
+							</a>
+						</li>
+						<li class="classic">
+							<a href="#postiche" title="Postiche">
+								<ul class="last">
+								<li class="beer_name">POSTICHE</li>
+								<li class="beer_who">Russian Imperial Stout</li>
+								</ul>
+							</a>								
+						</li>
+					</ul>
+				</div>
+				<div class="events">
+					<h3>EVENEMENTS</h3>
+					<ul>
+						<li>
+							<span class="date">
+								06-12-12 St Nicolas
+							</span>
+							<span class="event_desc">
+								A look at the patron saints of beer and brewing throughout history.
+							</span>
+						</li>
+						<li>
+							<span class="date">
+								25-12-12 Christmas Party
+							</span>
+							<span class="event_desc">
+								 Want to have a holly, jolly good time this holiday season? Try one of these festive beers.
+							</span>
+						</li>
+					</ul>
+				</div>
+						       
+		        </div>
+		    </div> <!--.story-->
+	
+	</div> <!--#intro-->
+	
+	<div id="discover">
+		<div class="story">
+	        <h2>DISCOVER</h2>
+	      	<h3>THE THREE ORIGINAL BEERS</h3>
+	    </div>
+		 <!--.story-->
+	</div> <!--#discover-->
+	
+	<div id="carioca">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2 class="welcome">OUR BEERS</h2>
+				<div class="three_beers">
+					<h3>LES CLASSIQUES</h3>
+					<ul>
+						<li class="classic">
+							<a href="#carioca" title="Carioca">
+								<ul>
+								<li class="beer_name">CARIOCA</li>
+								<li class="beer_who">La blanche</li>
+								</ul>
+							</a>
+						</li>
+						
+						<li class="classic">
+							<a href="#metisse" title="Métisse">
+								<ul>
+								<li class="beer_name">METISSE</li>
+								<li class="beer_who">La Saison</li>
+								</ul>
+							</a>
+						</li>
+						<li class="classic">
+							<a href="#postiche" title="Postiche">
+								<ul class="last">
+								<li class="beer_name">POSTICHE</li>
+								<li class="beer_who">Russian Imperial Stout</li>
+								</ul>
+							</a>								
+						</li>
+					</ul>
+				</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	<div id="small">
+		<div class="story">
+	        <h2>SMALL</h2>
+	      	<h3>BUT AMBITIOUS</h3>
+	    </div>
+		 <!--.story-->
+	</div> <!--#discover-->
+	
+	<div id="brewery">
+		<div class="story">
+			<div class="float-left">
+		      <h2 class="welcome">THE BREWERY</h2>
+		      <p>Beer, in some form, can be traced back almost 5000 years to Mesopotamian writings describing daily rations of beer and bread to workers. Before the rise of production breweries, the production of beer took place at home and was the domain of women, as baking and brewing were seen as "women's work. Even beard ones".</p>
+		    </div>      
+	    </div> <!--.story-->
+	</div> <!--#brewer-->
+</body>
+</html>

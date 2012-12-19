@@ -1,134 +1,100 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-<title>Brasserie du Lion à Plume</title>
-<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
-<link href="styles/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(900);
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Brasserie du Lion à Plume</title>
 	
-/*	RepositionNav();
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
 	
-	$(window).resize(function(){
-		RepositionNav();
-	});	
-*/
-	
-	//.parallax(xPosition, adjuster, inertia, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//adjuster - y position to start from
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#discover').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.15);
-	$('#carioca').parallax("50%", 0.1);
-	$('#small').parallax("50%", 0.1);
-	$('#brewer').parallax("50%", 0.1);
-
-})
-</script>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.parallax.parameters.js"></script>
 </head>
 
 <body>
 	
-	
 	<header>
 		<ul id="nav">
 			<li class="logo">
-				<a href="#intro">
+				<a href="#intro_bg">
 					<img src="images/logo_triangle.png" alt="Lion à Plume" title="Lion à Plume"/>
 				</a>
 			</li> 
-		    <li><a href="#carioca" title="Our beers">OUR-BEERS</a></li>
-		    <li><a href="#brewery" title="The brewery">THE-BREWERY</a></li>
-		    <li><a href="#resellers" title="Resellers">RESELLERS</a></li>
-		    <li><a href="#contact" title="Contact">CONTACT</a></li>
+			<li><a href="#beers_bg" title="Our beers">OUR-BEERS</a></li>
+			<li><a href="#brewe_bg" title="The brewery">THE-BREWERY</a></li>
+			<li><a href="#resel_bg" title="Resellers">RESELLERS</a></li>
+			<li><a href="#conta_bg" title="Contact">CONTACT</a></li>
 		</ul>
 	</header>
 
-	<!--div id=header>
-		
-	</div-->
-		
-	<div id="intro"> 		
-			<div class="story"><!--div class="bg"></div-->
-		    	<div class="float-left">
-				<h2 class="welcome">BIENVENUE SUR LE SITE<br/>DE LA BRASSERIE<br/>LION A PLUME</h2>
-				<div class="three_beers">
-					<h3>LES CLASSIQUES</h3>
-					<ul>
-						<li class="classic">
-							<a href="" title="Carioca">
-								<ul>
-								<li class="beer_name">CARIOCA</li>
-								<li class="beer_who">La blanche</li>
-								</ul>
-							</a>
-						</li>
-						
-						<li class="classic">
-							<a href="#metisse" title="Métisse">
-								<ul>
-								<li class="beer_name">METISSE</li>
-								<li class="beer_who">La Saison</li>
-								</ul>
-							</a>
-						</li>
-						<li class="classic">
-							<a href="#postiche" title="Postiche">
-								<ul class="last">
-								<li class="beer_name">POSTICHE</li>
-								<li class="beer_who">Russian Imperial Stout</li>
-								</ul>
-							</a>								
-						</li>
-					</ul>
-				</div>
-				<div class="events">
-					<h3>EVENEMENTS</h3>
-					<ul>
-						<li>
-							<span class="date">
-								06-12-12 St Nicolas
-							</span>
-							<span class="event_desc">
-								A look at the patron saints of beer and brewing throughout history.
-							</span>
-						</li>
-						<li>
-							<span class="date">
-								25-12-12 Christmas Party
-							</span>
-							<span class="event_desc">
-								 Want to have a holly, jolly good time this holiday season? Try one of these festive beers.
-							</span>
-						</li>
-					</ul>
-				</div>
-						       
-		        </div>
-		    </div> <!--.story-->
+	<div id="intro_bg">
+		<section>
+		<div id="intro_float">
+		<h2 class="intro_top">BIENVENUE SUR LE SITE<br/>DE LA BRASSERIE<br/>LION A PLUME</h2>
+		<div class="intro_l">
+			<h3>LES CLASSIQUES</h3>
+			<ul>
+				<li class="classic">
+					<a href="#beers_bg" title="Carioca">
+						<ul>
+							<li class="beer_name">CARIOCA</li>
+							<li class="beer_who">La blanche</li>
+						</ul>
+					</a>
+				</li>
+				<li class="classic">
+					<a href="#metisse" title="Métisse">
+						<ul>
+							<li class="beer_name">METISSE</li>
+							<li class="beer_who">La Saison</li>
+						</ul>
+					</a>
+				</li>
+				<li class="classic">
+					<a href="#postiche" title="Postiche">
+						<ul class="last">
+							<li class="beer_name">POSTICHE</li>
+							<li class="beer_who">Russian Imperial Stout</li>
+						</ul>
+					</a>								
+				</li>
+			</ul>
+		</div>
+		<div class="intro_m">
+			<h3>EVENEMENTS</h3>
+			<ul>
+				<li>
+					<span class="date">06-12-12 St Nicolas</span>
+					<span class="event_desc">A look at the patron saints of beer and brewing throughout history.</span>
+				</li>
+				<li>
+					<span class="date">25-12-12 Christmas Party</span>
+					<span class="event_desc">Want to have a holly, jolly good time this holiday season? Try one of these festive beers.</span>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="intro_glass">
+			<img src="images/beer.png" alt="beer glass" title="beer glass"/>
+		</div> <!--.intro_glass-->
+		</section>		       
+	</div> <!--#intro_bg-->
 	
-	</div> <!--#intro-->
-	
-	<div id="discover">
+	<div id="transition">
 		<div class="story">
-	        <h2>DISCOVER</h2>
-	      	<h3>THE THREE ORIGINAL BEERS</h3>
-	    </div>
-		 <!--.story-->
-	</div> <!--#discover-->
+	        <h1>DISCOVER</h1>
+	      	<h2>THE THREE ORIGINAL BEERS</h2>
+	    </div> <!--.story-->
+	</div> <!--#transition-->
 	
-	<div id="carioca">
+	<div id="beers_bg">
 		<div class="story">
 	    	<div class="float-left">
 	        	<h2 class="welcome">OUR BEERS</h2>
@@ -136,7 +102,7 @@ $(document).ready(function(){
 					<h3>LES CLASSIQUES</h3>
 					<ul>
 						<li class="classic">
-							<a href="#carioca" title="Carioca">
+							<a href="#beers_bg" title="Carioca">
 								<ul>
 								<li class="beer_name">CARIOCA</li>
 								<li class="beer_who">La blanche</li>
@@ -164,23 +130,54 @@ $(document).ready(function(){
 				</div>
 	        </div>
 	    </div> <!--.story-->
-	</div> <!--#third-->
+	</div> <!--#beers_bg-->
 	
-	<div id="small">
+	<div id="transition">
 		<div class="story">
-	        <h2>SMALL</h2>
-	      	<h3>BUT AMBITIOUS</h3>
-	    </div>
-		 <!--.story-->
-	</div> <!--#discover-->
+	        <h1>SMALL</h1>
+	      	<h2>BUT AMBITIOUS</h2>
+	    </div> <!--.story-->
+	</div> <!--#transition-->
 	
-	<div id="brewery">
+	<div id="brewe_bg">
 		<div class="story">
 			<div class="float-left">
-		      <h2 class="welcome">THE BREWERY</h2>
+		      <h2>THE BREWERY</h2>
 		      <p>Beer, in some form, can be traced back almost 5000 years to Mesopotamian writings describing daily rations of beer and bread to workers. Before the rise of production breweries, the production of beer took place at home and was the domain of women, as baking and brewing were seen as "women's work. Even beard ones".</p>
 		    </div>      
 	    </div> <!--.story-->
-	</div> <!--#brewer-->
+	</div> <!--#brewe_bg-->
+	
+	<div id="transition">
+		<div class="story">
+	        <h1>PEOPLE</h1>
+	      	<h2>WHO TRUST US</h2>
+	    </div> <!--.story-->
+	</div> <!--#transition-->
+	
+	<div id="resel_bg">
+		<div class="story">
+			<div class="float-left">
+		      <h2 class="welcome">RESELLERS</h2>
+		      <p>Insert resellers list here</p>
+		    </div>      
+	    </div> <!--.story-->
+	</div> <!--#resel_bg-->
+	
+	<div id="transition">
+		<div class="story">
+	        <h1>CONTACT US</h1>
+	      	<h2>FOR MORE INFORMATIONS</h2>
+	    </div> <!--.story-->
+	</div> <!--#transition-->
+	
+	<div id="conta_bg">
+		<div class="story">
+			<div class="float-left">
+		      <h2 class="welcome">CONTACT US</h2>
+		      <p>Insert contact form here</p>
+		    </div>      
+	    </div> <!--.story-->
+	</div> <!--#conta_bg-->
 </body>
 </html>

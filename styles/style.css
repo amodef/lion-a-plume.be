@@ -164,7 +164,7 @@ ul{
 	background:url("../images/arrow.png") right 0 no-repeat;
 	text-transform: uppercase;
 	font-weight:700;
-	padding: 10px 0px;
+	padding: 10px 0 20px 0;
 	height:35px;
 }
 .intro_beers a:hover, .intro_beers a:focus, .slides_beers a:hover, .slides_beers a:focus{

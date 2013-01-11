@@ -115,6 +115,17 @@ ul{
 	background:url(../images/bg_1.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
+
+.intro_glass{
+	background:url(../images/intro_glass.png) no-repeat  center bottom transparent;
+	width: 19.2em;
+	height:41.569523em;
+	display: inline-block;
+	background-size: cover;
+	position: relative;
+    top: 85px;
+}
+
 .slides{
 	background:url(../images/bg_2.jpg) center 0 no-repeat fixed;
 	background-size: cover;
@@ -214,7 +225,7 @@ ul{
 	font-weight: 700;
 }
 
-.intro_glass{
+/*.intro_glass{
 	display: inline-block;
 	padding: 11% 0 0 8%;
 	margin:0 auto;
@@ -225,7 +236,7 @@ ul{
 .intro_glass img{
 	min-height: 100%;
 	height: 100%
-}
+}*/
 
 /* Beers presentation page */
 .slide_container{

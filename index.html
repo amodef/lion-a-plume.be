@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Brasserie du Lion à Plume</title>
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/style.css">
+	
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="scripts/jquery.parallax-1.1.3.js"></script>
+	<script src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="scripts/slides.min.jquery.js"></script>
+	<script src="scripts/jquery.projectCode.js"></script>
+</head>
+
+<body>
+	
+	<!-- menu de navigation -->
+	<header>
+		<nav id="top_menu" class="top_menu">
+		<ul id="nav">
+			<li class="logo">
+				<a href="#intro"><img src="images/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
+			</li> 
+			<li class="t1"><a href="#slides" title="Our beers">Our beers</a></li>
+			<li class="t2"><a href="#brewe_bg" title="The brewery">The brewery</a></li>
+			<li class="t3"><a href="#resel_bg" title="Resellers">Resellers</a></li>
+			<li class="t4"><a href="#conta_bg" title="Contact">Contact</a></li>
+		</ul>
+		</nav>
+	</header>
+
+	<!-- introduction -->
+	<div id="intro" class="intro bg">
+	<div class="container">
+		<section class="intro_float">
+			<header>
+				<h1>Bienvenue sur le<br>site de la brasserie<br>Lion à Plume</h1>
+			</header>
+			<!-- menu direct bières -->
+			<nav class="intro_beers">
+				<header>
+					<h1>Our beers</h1>
+				</header>
+				<ul>
+					<li>
+						<a href="javascript:;" data-link="beer_0" title="Carioca">
+							Carioca<br>
+							<span>La blanche</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" data-link="beer_1" title="Métisse">
+							Métisse<br>
+							<span>La Saison</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" data-link="beer_2" title="Postiche">
+							Postiche<br>
+							<span>Russian Imperial Stout</span>
+						</a>								
+					</li>
+				</ul>
+			</nav>
+			<!-- scroll évènement -->
+			<section class="intro_event">
+				<header>
+					<h1>Events</h1>
+				</header>
+				<div class="scroll">
+				<article>
+					<header>
+						<h1>Christmas Party</h1>
+						<p>25-12-12</p>						
+					</header>
+					<p>Want to have a holly, jolly good time this holiday season? Try one of these festive beers.</p>
+				</article>
+				<article>
+					<header>
+						<h1>St-Nicolas</h1>
+						<p>06-12-12</p>
+					</header>
+					<p>A look at the patron saints of beer and brewing throughout history.</p>
+				</article>
+				<article>
+					<header>
+						<h1>Oktober Fest</h1>
+						<p>15-10-12</p>
+					</header>
+					<p>Come on if u wanna drink too much beers and get completely smashed!</p>
+				</article>
+				</div>
+			</section>
+		</section>
+		<!-- illustration verre -->
+		<!-- section class="intro_glass">
+			<img src="images/intro_glass.png" alt="verre de bière" name="verre">
+		</section -->
+	</div>
+	</div>
+	
+	<!-- transition 1 -->
+	<div id="tr1" class="transition">
+		<div class="story">
+	        <h1>Discover</h1>
+	      	<h2>The three original beers</h2>
+	    </div>
+	</div>
+	
+	<!-- les bières -->
+	<div id="slides" class="slides bg">
+	<div class="container">
+		<!-- navigation bières -->
+		<nav class="slides_beers">
+			<ul>
+				<li>
+					<a href="#0" class="link" id="beer_0" title="Carioca">
+						Carioca<br>
+						<span>La blanche</span>
+					</a>
+				</li>
+				<li>
+					<a href="#1" class="link" id="beer_1" title="Métisse">
+						Métisse<br>
+						<span>La Saison</span>
+					</a>
+				</li>
+				<li>
+					<a href="#2" class="link" id="beer_2" title="Postiche">
+						Postiche<br>
+						<span>Russian Imperial Stout</span>
+					</a>								
+				</li>
+			</ul>
+		</nav>
+		<!-- sliders bières -->
+		<div class="slides_container">
+			<!-- Carioca -->
+			<section>
+				<div class="slides_btle">
+					<img src="images/btle_carioca.png">
+					<div class="slides_glass"></div>
+				</div>
+				<div class="slides_txt">
+					<header>
+						<h1>Carioca</h1>
+						<h2>Blanche belge</h2>
+					</header>
+					<nav>
+					</nav>
+					<article>
+						<header>
+							<h1>Title</h1>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</article>
+				</div>
+			</section>
+			<!-- Métisse -->
+			<section>
+				<div class="slides_btle">
+					<img src="images/btle_metisse.png">
+					<div class="slides_glass"></div>
+				</div>
+				<div class="slides_txt">
+					<header>
+						<h1>Métisse</h1>
+						<h2>Saison</h2>
+					</header>
+					<nav>
+					</nav>
+					<article>
+						<header>
+							<h1>Title</h1>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</article>
+				</div>
+			</section>
+			<!-- Postiche -->
+			<section>
+				<div class="slides_btle">
+					<img src="images/btle_postiche.png">
+					<div class="slides_glass"></div>
+				</div>
+				<div class="slides_txt">
+					<header>
+						<h1>Postiche</h1>
+						<h2>Russian Imperial Stout</h2>
+					</header>
+					<nav>
+					</nav>
+					<article>
+						<header>
+							<h1>Title</h1>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</article>
+				</div>
+			</section>
+		</div>
+	</div>
+	</div>
+	
+	<!-- transition 2 -->
+	<div id="tr2" class="transition">
+		<div class="story">
+	        <h1>Small</h1>
+	      	<h2>but ambitious</h2>
+	    </div>
+	</div>
+	
+	<div id="brewe_bg" class="bg">
+		<div class="story">
+			<div class="float-left">
+		      <h2>THE BREWERY</h2>
+		      <p>Beer, in some form, can be traced back almost 5000 years to Mesopotamian writings describing daily rations of beer and bread to workers. Before the rise of production breweries, the production of beer took place at home and was the domain of women, as baking and brewing were seen as "women's work. Even beard ones".</p>
+		    </div>      
+	    </div>
+	</div>
+	
+	<div id="tr3" class="transition">
+		<div class="story">
+	        <h1>People</h1>
+	      	<h2>who trust us</h2>
+	    </div>
+	</div>
+	
+	<div id="resel_bg" class="bg">
+		<div class="story">
+			<div class="float-left">
+		      <h2 class="welcome">RESELLERS</h2>
+		      <p>Insert resellers list here</p>
+		    </div>      
+	    </div>
+	</div>
+	
+	<div id="tr4" class="transition">
+		<div class="story">
+	        <h1>Contact us</h1>
+	      	<h2>fore more informations</h2>
+	    </div>
+	</div>
+	
+	<div id="conta_bg" class="bg">
+		<div class="story">
+			<div class="float-left">
+		      <h2 class="welcome">CONTACT US</h2>
+		      <p>Insert contact form here</p>
+		    </div>      
+	    </div>
+	</div>
+
+
+</body>
+</html>

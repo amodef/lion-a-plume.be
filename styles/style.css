@@ -55,15 +55,14 @@ ul{
 .top_menu ul {
 	position: fixed;
 	z-index: 10;
-	height:200px;
 	text-transform:uppercase;
 }
 .top_menu li{
 	display:block;
-	background: url(../images/top_menu2.png) 0 0 no-repeat;
+	background: url(../images/top_menu.png) 0 0 no-repeat;
 	height:22px;
 	float:left;
-	width:173px;
+	width:233px;
 	padding: 2px 24px 0 0;
 	text-align:center;
 	background-color: transparent;
@@ -72,16 +71,16 @@ ul{
 	left: 0;
 }
 .top_menu .t1{
-	left:176px;
+	left:226px;
 }
 .top_menu .t2{
-	left:333px;
+	left:437px;
 }
 .top_menu .t3{
-	left:490px;
+	left:648px;
 }
 .top_menu .t4{
-	left:647px;
+	left:859px;
 }
 .top_menu li:hover{
 	background-position: 0 -24px;	
@@ -92,7 +91,7 @@ ul{
 	font-weight:700;
 }
 .top_menu li:first-child{
-	width:200px;
+	width:250px;
 	padding :0;
 	margin:0;
 }
@@ -100,8 +99,8 @@ ul{
 	border: none;
 }
 .top_menu li:first-child a img{
-	height:200px;
-	width:200px;
+	height:250px;
+	width:250px;
 }
 
 /* Structural content */
@@ -135,7 +134,7 @@ ul{
 .intro_float h1{
 	padding: 25% 0 10% 0;
 	font-size: 3.5em;
-	font-weight:200;
+	font-weight: 200;
 }
 
 .intro_beers, .slides_beers{
@@ -312,6 +311,33 @@ ul{
 
 /* Media queries */
 @media screen and (max-width: 1350px){
+	/* Menu size reduction */
+	.top_menu li{
+		background: url(../images/top_menu2.png) 0 0 no-repeat;
+		width:173px;
+	}
+	.top_menu .t1{
+		left:176px;
+	}
+	.top_menu .t2{
+		left:333px;
+	}
+	.top_menu .t3{
+		left:490px;
+	}
+	.top_menu .t4{
+		left:647px;
+	}
+	.top_menu li:first-child{
+		width:200px;
+		padding :0;
+		margin:0;
+	}
+	.top_menu li:first-child a img{
+		height:200px;
+		width:200px;
+	}
+	/* Intro's title size reduction to keep it on three lines' */
 	.intro_float h1{
 		font-size: 3em;
 	}

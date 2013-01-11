@@ -1,51 +1,39 @@
-/*
-Plugin: jQuery Parallax
-Version 1.1
-Author: Ian Lunn
-Author URL: http://www.ianlunn.co.uk/
-Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
-
-License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
-*/
-
-html{
+/* Initialization */
+html, body{
 	width: 100%;
 	height:100%;
+}
+
+html{
+	font-size: 100%;
 }
 
 body{
 	margin: 0;
 	padding: 0;
-	min-width: 980px;
-	height:100%;
 	background-color:#fff;
+	min-width:980px;
+	font-family: Kievit, sans-serif;
 }
 
-p{
-	margin: 0 0 20px 0;	
-}
-p, ul{
-	font-family: Kievit,  sans-serif;
-	font-size-adjust:0.488;
-	font-weight:normal;
+p, li{
+	font-weight:400;
 	font-style:normal;
-	color:#000;
+	font-size:1em;
+	margin: 0;
+	padding: 0;
 }
 
 img{
 	border: 0;
 }
 
-h1, h2, h3, #pixels{
-	font-family: Kievit, sans-serif;
-	font-weight:bold;
+h1, h2, h3{
+	font-weight:700;
 	font-style:normal;
-}
-h1, #pixels{
-	font-size-adjust:0.40;
-}
-h2{
-	font-size-adjust:0.531;
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
 }
 
 a{
@@ -57,168 +45,281 @@ a:visited{
 	color:#000;
 }
 
-
-h2.intro_top {
-	font-size:40px;
-	font-weight:lighter;
-}
-
-
-ul#nav {
-	position:fixed;
+ul{
 	list-style:none;
-	padding-left:0px;
-	margin-top:0px;
-	z-index:400;
+	padding: 0;
+	margin: 0;
 }
-ul#nav li{
+
+/* Top menu */
+.top_menu ul {
+	position: fixed;
+	z-index: 10;
+	height:200px;
+	text-transform:uppercase;
+}
+.top_menu li{
+	display:block;
+	background: url(../images/top_menu2.png) 0 0 no-repeat;
+	height:22px;
 	float:left;
-	background-color:#000;
-	margin: 0px 2px 0px 0;	
-	padding : 2px 20px 2px 20px;
-	
-}
-ul#nav li a{
-	color:#fff;
-	font-weight:bold;
-}
-
-ul#nav li.logo  {
+	width:173px;
+	padding: 2px 24px 0 0;
+	text-align:center;
 	background-color: transparent;
-	padding : 0 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-
-ul#nav li.logo a img{
+.top_menu .t1{
+	left:176px;
+}
+.top_menu .t2{
+	left:333px;
+}
+.top_menu .t3{
+	left:490px;
+}
+.top_menu .t4{
+	left:647px;
+}
+.top_menu li:hover{
+	background-position: 0 -24px;	
+}
+.top_menu li a{
+	color:#fff;
+	font-size:0.9em;
+	font-weight:700;
+}
+.top_menu li:first-child{
+	width:200px;
+	padding :0;
+	margin:0;
+}
+.top_menu li:first-child a:focus{
+	border: none;
+}
+.top_menu li:first-child a img{
+	height:200px;
 	width:200px;
 }
 
-ul{
-	list-style:none;
-	padding-left:0px;
+/* Structural content */
+.bg{
+	background:url(../images/bg_1.png) center 0 repeat-x;
+	background-size: cover;
+	height: 100%;
+	min-width:100%;
+	z-index: -1;
 }
-li.classic ul {
-	background:url("../images/arrow_right.png") center right no-repeat;
-	border-bottom : 1px dotted;
-	padding-left: 0px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-li.classic ul.last {
-	border-bottom : none;	
-}
-li.classic ul:hover {
-	background:url("../images/arrow_right.png") center right no-repeat #E0E0E0;
-}
-li.beer_who{
-	color:#CC202F;
-	font-style: italic;
-}
-.events{
-	width:45%;	
-	float:left;
-	margin-left:20px;
-}
-span.date {
-	color:#CC202F;
-	font-style:italic;
-}
-span.event_desc{
-	float:left;
-}
-
-/* Content */
-#intro_bg, #beers_bg, #brewe_bg, #resel_bg, #conta_bg{
-	background: linear-gradient(#E0E0E0, #FFFFFF);
-	background: -o-linear-gradient(#E0E0E0, #FFFFFF);
-	background: -moz-linear-gradient(#E0E0E0, #FFFFFF);
-	background: -webkit-linear-gradient(#E0E0E0, #FFFFFF);
-	background: -ms-linear-gradient(#E0E0E0, #FFFFFF);
-
-	min-height: 100%;
-	width:100%;
-	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
+.intro{
+	background:url(../images/bg_1.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
-
-section{
+.slides{
+	background:url(../images/bg_2.jpg) center 0 no-repeat fixed;
+	background-size: cover;
+}
+.container{
+	z-index:1;
 	margin:auto;
 	width:70%;	
 	position: relative;
 }
 
-#intro_float{
+/* Intro page */
+.intro_float{
 	float:left;
-    width:60%;
+	width:55%;
+}
+.intro_float h1{
+	padding: 25% 0 10% 0;
+	font-size: 3.5em;
+	font-weight:200;
 }
 
-.intro_top{
-	padding-top: 15%;
-}
-
-.intro_l{
+.intro_beers, .slides_beers{
 	display: inline-block;
-    width: 45%;
-    vertical-align: top;
+	width: 45%;
+	vertical-align: top;
+}
+.intro_beers li, .slides_beers li{
+	border-bottom : 1px dotted;
+}
+.intro_beers li:last-child, .slides_beers li:last-child{
+	border-bottom : none;	
+}
+.intro_beers a, .slides_beers a{
+	display:block;
+	background:url("../images/arrow.png") right 0 no-repeat;
+	text-transform: uppercase;
+	font-weight:700;
+	padding: 10px 0px;
+	height:35px;
+}
+.intro_beers a:hover, .intro_beers a:focus, .slides_beers a:hover, .slides_beers a:focus{
+	background-position:right -55px;
 }
 
-.intro_m{
+.intro_beers span, .slides_beers span{
+	color:#cc202f;
+	font-style: italic;
+	text-transform: none;
+	font-weight:400;
+}
+
+.intro_event{
 	display: inline-block;
-    width: 45%;
-    margin-left:4%;
-    vertical-align: top;
+	padding:0 0 0 0;
+	width: 45%;
+	margin:0 0 0 8%;
+	vertical-align: top;
+}
+.intro_event .scroll{
+	overflow: auto;
+	max-height:200px;
+}
+.intro_event article p{
+	margin-bottom:10px;
+}
+.intro_event article header{
+	padding:0;
+	margin: 0;
+	color:#cc202f;
+	font-size:1em;
+}
+.intro_event article header p{
+	font-style:italic;
+	margin-bottom:8px;
+	line-height:.8em;
+}
+.intro_event article header h1{
+	padding: 0;
+	margin: 0;
+	color:#000;
+	font-size:1em;
+	font-weight:700;
+	font-style:normal;
+}
+.intro_event article{
+	border-bottom : 1px dotted;
+	margin:0 15px 10px 0;
+}
+.intro_event article:last-child {
+	border-bottom : none;	
 }
 
-.intro_glass{	
-	float:left;
-	width:40%;
-	height:70%;
-	padding-top: 8%;
-	background-color: transparent;	
+.intro_beers h1, .intro_event h1{
+	padding-top:0;
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.intro_glass{
+	display: inline-block;
+	padding: 11% 0 0 8%;
+	margin:0 auto;
+	width: 19.2em;
+	height:41.569523em;
+	background-color: transparent;
 }
 .intro_glass img{
-	max-height: 100%;
+	min-height: 100%;
+	height: 100%
 }
 
-
-
-
-
-
-
-#beers_bg .story .float-left {
-  padding: 170px 50px 0;
-  position: relative;
-  width: 510px;
+/* Beers presentation page */
+.slide_container{
+	z-index: 1;
 }
-#brewe_bg .story .float-left {
-  padding: 170px 50px 0;
-  position: relative;
-  width: 350px;
+.slides_beers{
+	position: absolute;
+	top: 50%;
+	left:0;
+	width: 20%;
+	z-index: 8;
+}
+.slides_beers, .slides_btle, .slides_txt{
+	display:inline-block;
+	vertical-align: top;
+}
+.slides_btle{
+	margin-left:12%;
+	width: 20%;
+	height: 100%;
+}
+.slides_btle img{
+	height: 100%;
+	max-width: 100%;
 }
 
-#transition{
-	background-color: #E21D2A;
-	color:white;
-	background-position: 50% 0;
+.slides_txt{
+	padding-top: 12%;
+	width: 18%;
+}
+.slides_txt h1{
+	font-weight: 200;
+	font-size: 4em;
+	line-height: 0.8em;
+}
+.slides_txt h2{
+	color: #cc202f;
+	font-style: italic;
+	text-transform: none;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom:2em;
+	height: 3em;
+	background: url('../images/corner.png') 0 1.5em no-repeat;
+}
+.slides_txt article{
+	line-height:1.4em;
+	font-weight: 200;
+}
+.slides_txt article h1{
+	font-weight: 700;
+	font-size: 1em;
+	color: #cc202f;
+	line-height:1.4em;
+}
+
+/* Tranzition pages */
+.transition{
+	background: #e21d2a;
+	text-transform: uppercase;
+	color: white;
 	height: 50%;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
 	clear: both;
-	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;
-	background-size: cover;
+	z-index: 9;
 }
-#transition h1{
+.transition h1{
 	font-size: 60px;
-	font-weight: lighter;
-	padding-left:22%;
+	font-weight: 200;
+	padding-left: 22%;
 	margin-top: 100px;
 	margin-bottom: 0px;
 }
-#transition h2{
-	color:white;
+.transition h2{
+	color: white;
 	font-size: 55px;
 	padding-left: 32%;
-	font-weight: lighter;
+	font-weight: 200;
 	margin-top:0px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1350px){
+	.intro_float h1{
+		font-size: 3em;
+	}
+	.intro_beers h1, .intro_event h1{
+		font-size: 1.4em;
+	}
+	.intro_glass{
+		width: 16.32em;
+		height: 35.334095em;
+	}
 }

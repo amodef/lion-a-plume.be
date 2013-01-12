@@ -19,12 +19,12 @@ $(document).ready(function(){
 	
 	
 	// Slider effect
-	$('#slides').slides({
-		preload: true,
-		generateNextPrev: false,
-		generatePagination: false,
-		paginationClass: 'slides_beers'
-	});
+	//$('#slides').slides({
+	//	preload: true,
+	//	generateNextPrev: false,
+	//	generatePagination: false,
+	//	paginationClass: 'slides_beers'
+	//});
 	
 	// Externals slider links
 	$('.intro_beers a').click(function(){ 
@@ -33,5 +33,18 @@ $(document).ready(function(){
 		$.scrollTo('#slides',900);
 		return false;
 	});
+	
+	$('#slider_container').cycle({
+        fx: 'scrollHorz',
+        speed: 500, 
+        fit:1,
+        timeout: 0
+    });
+    
+    $('.slides_beers a').click(function(){ 
+        var num_link = parseInt($(this).data('link'));
+        $('#slider_container').cycle(num_link); 
+        return false; 
+    });
 	
 });

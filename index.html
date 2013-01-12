@@ -16,6 +16,7 @@
 	<script src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 	<script src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 	<script src="scripts/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 	<script src="scripts/jquery.projectCode.js"></script>
 </head>
 
@@ -122,28 +123,30 @@
 		<nav class="slides_beers">
 			<ul>
 				<li>
-					<a href="#0" class="link" id="beer_0" title="Carioca">
+					<a href="javascript:;" class="link" id="beer_0" title="Carioca" data-link="0">
 						Carioca<br>
 						<span>La blanche</span>
 					</a>
 				</li>
 				<li>
-					<a href="#1" class="link" id="beer_1" title="Métisse">
+					<a href="javascript:;" class="link" id="beer_1" title="Métisse" data-link="1">
 						Métisse<br>
 						<span>La Saison</span>
 					</a>
 				</li>
 				<li>
-					<a href="#2" class="link" id="beer_2" title="Postiche">
+					<a href="javascript:;" class="link" id="beer_2" title="Postiche" data-link="2">
 						Postiche<br>
 						<span>Russian Imperial Stout</span>
 					</a>								
 				</li>
 			</ul>
 		</nav>
+		
 		<!-- sliders bières -->
-		<div class="slides_container">
-			<!-- Carioca -->
+		 <div id="slider_container" class="pics">
+	      <div class="content">
+	    	<!-- Carioca -->
 			<section>
 				<div class="slides_btle">
 					<img src="images/btle_carioca.png">
@@ -164,7 +167,9 @@
 					</article>
 				</div>
 			</section>
-			<!-- Métisse -->
+	      </div>
+	      <div class="content">
+	        <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
 					<img src="images/btle_metisse.png">
@@ -185,7 +190,9 @@
 					</article>
 				</div>
 			</section>
-			<!-- Postiche -->
+	      </div>
+	      <div class="content">
+	        <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
 					<img src="images/btle_postiche.png">
@@ -206,7 +213,10 @@
 					</article>
 				</div>
 			</section>
-		</div>
+	      </div>
+	    </div>
+		
+		
 	</div>
 	</div>
 	

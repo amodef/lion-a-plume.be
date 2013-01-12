@@ -251,18 +251,30 @@ ul{
 	width: 20%;
 	z-index: 8;
 }
+
+ .slides_container {
+    width:570px;
+    height:600px;
+}
+.slides_container div {
+    width:570px;
+    height:600px;
+    display:block;
+}
+
 .slides_beers, .slides_btle, .slides_txt{
 	display:inline-block;
 	vertical-align: top;
 }
 .slides_btle{
-	margin-left:12%;
-	width: 20%;
-	height: 100%;
+	margin-left:22%;
+	width: auto;
+	height: 660px;
 }
 .slides_btle img{
 	height: 100%;
-	max-width: 100%;
+	width: auto;
+	
 }
 
 .slides_txt{

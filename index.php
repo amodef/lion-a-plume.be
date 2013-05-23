@@ -69,7 +69,7 @@ include_once("inc/i18n.php");
 					<li>
 						<a href="#" data-link="2" title="Postiche">
 							Postiche<br>
-							<span><?php echo _("Russian Imperial Stout"); ?></span>
+							<span>Russian Imperial Stout</span>
 						</a>								
 					</li>
 				</ul>
@@ -83,7 +83,7 @@ include_once("inc/i18n.php");
 					<article>
 						<header>
 							<h1><?php echo _("New website!"); ?></h1>
-							<p>1-6-13</p>						
+							<p>01-06-2013</p>						
 						</header>
 						<p><?php echo _("Here it is! Our long awaited new website is finally online. We really hope that you'll appreciate it has we do!"); ?></p>
 					</article>
@@ -127,7 +127,7 @@ include_once("inc/i18n.php");
 				<li>
 					<a href="#" title="Postiche" data-link="2">
 						Postiche<br>
-						<span><?php echo _("Russian Imperial Stout"); ?></span>
+						<span>Russian Imperial Stout</span>
 					</a>								
 				</li>
 			</ul>
@@ -136,6 +136,7 @@ include_once("inc/i18n.php");
 		<!-- sliders bières -->
 		<div id="slider_container" class="pics">
 	    <!-- Carioca -->
+	    <!-- Removed the bottles submenus (wip)
 			<section>
 				<div class="slides_btle">
 					<img src="<?php echo BASE_URL ; ?>images/btle_carioca.png">
@@ -165,7 +166,7 @@ include_once("inc/i18n.php");
 						</header>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</article>
-					<article class="two"><!-- ici -->
+					<article class="two">
 						<header>
 							<h1>Second</h1>
 						</header>
@@ -179,11 +180,32 @@ include_once("inc/i18n.php");
 					</article>
 					</div>
 				</div>
+			</section> -->
+
+			<!-- Carioca -->
+			<section>
+				<div class="slides_btle">
+					<img src="<?php echo BASE_URL ; ?>images/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
+				</div>
+				<div class="slides_txt">
+					<header>
+						<h1>Carioca</h1>
+						<h2>Witbier</h2>
+					</header>
+					<nav>
+					</nav>
+					<article>
+						<!--<header>
+							<h1>Title</h1>
+						</header>-->
+						<p><?php echo _("White beer, a traditional Belgian wheat beer, was born in the region of Leuven. Unlikeclassical recipes, Carioca is brewed without coriander in order to preserve the soft citrus perfume of its hops (Amarillo &amp; Cascade)."); ?></p>
+					</article>
+				</div>
 			</section>
 	    <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_metisse.png">
+					<img src="<?php echo BASE_URL ; ?>images/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -193,17 +215,17 @@ include_once("inc/i18n.php");
 					<nav>
 					</nav>
 					<article>
-						<header>
+						<!--<header>
 							<h1>Title</h1>
-						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</header>-->
+						<p><?php echo _("Season beers were brewed in farmhouses in Wallonia, the French-speaking region of Belgium, to refresh farm workers during harvest season. Thanks to a subtle mix of English (E. K. Goldings) and American (Cascade) hops, the Métisse can be distinguished by its delicate balance and franc bitterness."); ?></p>
 					</article>
 				</div>
 			</section>
 	    <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_postiche.png" alt="Bouteille de Postiche">
+					<img src="<?php echo BASE_URL ; ?>images/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -213,10 +235,10 @@ include_once("inc/i18n.php");
 					<nav>
 					</nav>
 					<article>
-						<header>
+						<!--<header>
 							<h1>Title</h1>
-						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</header>-->
+						<p><?php echo _("Brewed in England from the 18th century onwards, this stronger version of the traditional stout was brewed for Empress Catherine II Of Russia's court. The Postiche is a modern version of the style, were flavoured roasted malts come together with the citrus taste of American hops."); ?></p>
 					</article>
 				</div>
 			</section>
@@ -227,8 +249,8 @@ include_once("inc/i18n.php");
 	<!-- transition 2 -->
 	<div id="tr2" class="transition">
 		<div class="story">
-	        <h1>Small brewery</h1>
-	      	<h2>Great quality</h2>
+	        <h1><?php echo _("Small brewery"); ?></h1>
+	      	<h2><?php echo _("Great quality"); ?></h2>
 	    </div>
 	</div>
 	
@@ -236,11 +258,11 @@ include_once("inc/i18n.php");
 	<div id="brewe" class="brewe bg">
 	<div class="container">
 		<section class="brewe_txt"> 
-		      <h1>The brewery</h1>
-		      <p>Beer, in some form, can be traced back almost 5000 years to Mesopotamian writings describing daily rations of beer and bread to workers. Before the rise of production breweries, the production of beer took place at home and was the domain of women, as baking and brewing were seen as women's work. Even beard ones".</p>
+		      <h1><?php echo _("The brewery"); ?></h1>
+		      <p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. The latter does not hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning his own facility, the brewer rents a microbrewery, where he produces his own authnetic beers without additives or artificial flavours."); ?></p>
 		</section>
 		<div class="brewe_sticker">
-			<img src="<?php echo BASE_URL ; ?>images/sticker.png" alt="Good beer & good brewery">
+			<img src="<?php echo BASE_URL ; ?>images/sticker.png" alt="<?php echo _("Good beer & good brewery"); ?>">
 		</div>
 	</div>
 	</div>
@@ -264,8 +286,8 @@ include_once("inc/i18n.php");
 	
 	<div id="tr4" class="transition">
 		<div class="story">
-	        <h1>Contact us</h1>
-	      	<h2>We hope to hear from you!</h2>
+	        <h1><?php echo _("Contact us"); ?></h1>
+	      	<h2><?php echo _("Where to find us"); ?></h2>
 	    </div>
 	</div>
 	

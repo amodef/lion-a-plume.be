@@ -10,7 +10,6 @@ $(document).ready(function(){
 	$('#intro .container').parallax("50%", 0.1);
 	$('.intro_glass').parallax("60%", 0.4);
 	$('#tr1').parallax("50%", 0.3);
-	
 	$('#tr2').parallax("50%", 0.3);
 	
 	//$('.brewe_sticker').parallax("0%", 0.3);

@@ -1,5 +1,6 @@
 <?php
-include_once("i18n.php");
+require_once("inc/config.php");
+include_once("inc/i18n.php");
 ?>
 
 <!doctype html>
@@ -8,19 +9,19 @@ include_once("i18n.php");
 	<meta charset="utf-8">
 	<title><?php echo _("Lion à Plume's brewery") . ' - ' . $locale; ?></title>
 
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/fonts.css">
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/normalize.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/fonts.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/style.css">
 	
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script src="scripts/jquery.parallax-1.1.3.js"></script>
-	<script src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-	<script src="scripts/jquery.cycle-1.3.2.js"></script>
-	<script src="scripts/jquery.projectCode.js"></script>
+	<script src="<?php echo BASE_URL ; ?>scripts/jquery.parallax-1.1.3.js"></script>
+	<script src="<?php echo BASE_URL ; ?>scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="<?php echo BASE_URL ; ?>scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="<?php echo BASE_URL ; ?>scripts/jquery.cycle-1.3.2.js"></script>
+	<script src="<?php echo BASE_URL ; ?>scripts/jquery.projectCode.js"></script>
 </head>
 
 <body>
@@ -30,12 +31,12 @@ include_once("i18n.php");
 		<nav id="top_menu" class="top_menu">
 		<ul id="nav">
 			<li class="logo">
-				<a href="#intro"><img src="images/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
+				<a href="#intro"><img src="<?php echo BASE_URL ; ?>images/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
 			</li> 
-			<li class="t1"><a href="#slides" title="Our beers">Our beers</a></li>
-			<li class="t2"><a href="#brewe" title="The brewery">The brewery</a></li>
+			<li class="t1"><a href="#slides" title="<?php echo _("Our beers"); ?>"><?php echo _("Our beers"); ?></a></li>
+			<li class="t2"><a href="#brewe" title="<?php echo _("The brewery"); ?>"><?php echo _("The brewery"); ?></a></li>
 			<!--<li class="t3"><a href="#resel_bg" title="Resellers">Resellers</a></li>-->
-			<li class="t3"><a href="#conta_bg" title="Contact">Contact</a></li>
+			<li class="t3"><a href="#conta_bg" title="<?php echo _("Contact"); ?>"><?php echo _("Contact"); ?></a></li>
 		</ul>
 		</nav>
 	</header>
@@ -45,30 +46,30 @@ include_once("i18n.php");
 	<div class="container">
 		<section class="intro_float">
 			<header>
-				<?php echo _("<h1>Welcome to the<br>Lion à Plume's<br>website</h1>"); ?>
+				<h1><?php echo _("Welcome to the<br>Lion à Plume's<br>website"); ?></h1>
 			</header>
 			<!-- menu direct bières -->
 			<nav class="intro_beers">
 				<header>
-					<?php echo _("<h1>Our beers</h1>"); ?>
+					<h1><?php echo _("Our beers"); ?></h1>
 				</header>
 				<ul>
 					<li>
 						<a href="#" data-link="0" title="Carioca">
 							Carioca<br>
-							<span>La blanche</span>
+							<span><?php echo _("The white beer"); ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#" data-link="1" title="Métisse">
 							Métisse<br>
-							<span>La Saison</span>
+							<span><?php echo _("The season beer"); ?></span>
 						</a>
 					</li>
 					<li>
 						<a href="#" data-link="2" title="Postiche">
 							Postiche<br>
-							<span>Russian Imperial Stout</span>
+							<span><?php echo _("Russian Imperial Stout"); ?></span>
 						</a>								
 					</li>
 				</ul>
@@ -76,30 +77,16 @@ include_once("i18n.php");
 			<!-- scroll évènement -->
 			<section class="intro_event">
 				<header>
-					<h1>Events</h1>
+					<h1><?php echo _("Events"); ?></h1>
 				</header>
 				<div class="scroll">
-				<article>
-					<header>
-						<h1>Christmas Party</h1>
-						<p>25-12-12</p>						
-					</header>
-					<p>Want to have a holly, jolly good time this holiday season? Try one of these festive beers.</p>
-				</article>
-				<article>
-					<header>
-						<h1>St-Nicolas</h1>
-						<p>06-12-12</p>
-					</header>
-					<p>A look at the patron saints of beer and brewing throughout history.</p>
-				</article>
-				<article>
-					<header>
-						<h1>Oktober Fest</h1>
-						<p>15-10-12</p>
-					</header>
-					<p>Come on if u wanna drink too much beers and get completely smashed!</p>
-				</article>
+					<article>
+						<header>
+							<h1><?php echo _("New website!"); ?></h1>
+							<p>1-6-13</p>						
+						</header>
+						<p><?php echo _("Here it is! Our long awaited new website is finally online. We really hope that you'll appreciate it has we do!"); ?></p>
+					</article>
 				</div>
 			</section>
 		</section>
@@ -114,8 +101,8 @@ include_once("i18n.php");
 	<!-- transition 1 -->
 	<div id="tr1" class="transition">
 		<div class="story">
-	        <h1>Discover</h1>
-	      	<h2>The three original beers</h2>
+	        <h1><?php echo _("Discover"); ?></h1>
+	      	<h2><?php echo _("The three original beers"); ?></h2>
 	    </div>
 	</div>
 	
@@ -128,19 +115,19 @@ include_once("i18n.php");
 				<li>
 					<a href="#" title="Carioca" data-link="0">
 						Carioca<br>
-						<span>La blanche</span>
+						<span><?php echo _("The white beer"); ?></span>
 					</a>
 				</li>
 				<li>
 					<a href="#" title="Métisse" data-link="1">
 						Métisse<br>
-						<span>La Saison</span>
+						<span><?php echo _("The season beer"); ?></span>
 					</a>
 				</li>
 				<li>
 					<a href="#" title="Postiche" data-link="2">
 						Postiche<br>
-						<span>Russian Imperial Stout</span>
+						<span><?php echo _("Russian Imperial Stout"); ?></span>
 					</a>								
 				</li>
 			</ul>
@@ -151,7 +138,7 @@ include_once("i18n.php");
 	    <!-- Carioca -->
 			<section>
 				<div class="slides_btle">
-					<img src="images/btle_carioca.png">
+					<img src="<?php echo BASE_URL ; ?>images/btle_carioca.png">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -196,7 +183,7 @@ include_once("i18n.php");
 	    <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
-					<img src="images/btle_metisse.png">
+					<img src="<?php echo BASE_URL ; ?>images/btle_metisse.png">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -216,7 +203,7 @@ include_once("i18n.php");
 	    <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
-					<img src="images/btle_postiche.png" alt="Bouteille de Postiche">
+					<img src="<?php echo BASE_URL ; ?>images/btle_postiche.png" alt="Bouteille de Postiche">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -240,8 +227,8 @@ include_once("i18n.php");
 	<!-- transition 2 -->
 	<div id="tr2" class="transition">
 		<div class="story">
-	        <h1>Small</h1>
-	      	<h2>but ambitious</h2>
+	        <h1>Small brewery</h1>
+	      	<h2>Great quality</h2>
 	    </div>
 	</div>
 	
@@ -253,7 +240,7 @@ include_once("i18n.php");
 		      <p>Beer, in some form, can be traced back almost 5000 years to Mesopotamian writings describing daily rations of beer and bread to workers. Before the rise of production breweries, the production of beer took place at home and was the domain of women, as baking and brewing were seen as women's work. Even beard ones".</p>
 		</section>
 		<div class="brewe_sticker">
-			<img src="images/sticker.png" alt="Good beer & good brewery">
+			<img src="<?php echo BASE_URL ; ?>images/sticker.png" alt="Good beer & good brewery">
 		</div>
 	</div>
 	</div>
@@ -278,7 +265,7 @@ include_once("i18n.php");
 	<div id="tr4" class="transition">
 		<div class="story">
 	        <h1>Contact us</h1>
-	      	<h2>fore more informations</h2>
+	      	<h2>We hope to hear from you!</h2>
 	    </div>
 	</div>
 	

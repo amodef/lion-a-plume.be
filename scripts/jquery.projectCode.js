@@ -33,6 +33,12 @@ $(document).ready(function(){
     height:'auto',
     timeout: 0
   });
+  
+  $('.slides_dots a').click(function(){
+ 		var desc_link = $this.data('link');
+ 		$('').hide;
+ 		$(desc_link).toggle;
+  });
 
 	$('.intro_beers a, .slides_beers a').click(function(){ 
 		var num_link = parseInt($(this).data('link'));

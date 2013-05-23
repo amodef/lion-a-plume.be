@@ -7,21 +7,21 @@ include_once("inc/i18n.php");
 <html lang="<?php echo _("en"); ?>">
 <head>
 	<meta charset="utf-8">
-	<title><?php echo _("Lion à Plume's brewery") . ' - ' . $locale; ?></title>
+	<title><?php echo _("Lion à Plume's brewery"); ?></title>
 
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/normalize.css">
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/fonts.css">
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>styles/style.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/normalize.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/fonts.css">
+	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/style.css">
 	
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script src="<?php echo BASE_URL ; ?>scripts/jquery.parallax-1.1.3.js"></script>
-	<script src="<?php echo BASE_URL ; ?>scripts/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="<?php echo BASE_URL ; ?>scripts/jquery.scrollTo-1.4.2-min.js"></script>
-	<script src="<?php echo BASE_URL ; ?>scripts/jquery.cycle-1.3.2.js"></script>
-	<script src="<?php echo BASE_URL ; ?>scripts/jquery.projectCode.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.parallax-1.1.3.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.cycle-1.3.2.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.projectCode.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@ include_once("inc/i18n.php");
 		<nav id="top_menu" class="top_menu">
 		<ul id="nav">
 			<li class="logo">
-				<a href="#intro"><img src="<?php echo BASE_URL ; ?>images/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
+				<a href="#intro"><img src="<?php echo BASE_URL ; ?>img/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
 			</li> 
 			<li class="t1"><a href="#slides" title="<?php echo _("Our beers"); ?>"><?php echo _("Our beers"); ?></a></li>
 			<li class="t2"><a href="#brewe" title="<?php echo _("The brewery"); ?>"><?php echo _("The brewery"); ?></a></li>
@@ -93,7 +93,7 @@ include_once("inc/i18n.php");
 		<!-- illustration verre -->
 		<section class="intro_glass">
 			
-		<!--img src="images/intro_glass.png" alt="verre de bière" name="verre"-->
+		<!--img src="img/intro_glass.png" alt="verre de bière" name="verre"-->
 		</section>
 	</div>
 	</div>
@@ -139,7 +139,7 @@ include_once("inc/i18n.php");
 	    <!-- Removed the bottles submenus (wip)
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_carioca.png">
+					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -185,7 +185,7 @@ include_once("inc/i18n.php");
 			<!-- Carioca -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -205,7 +205,7 @@ include_once("inc/i18n.php");
 	    <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -225,7 +225,7 @@ include_once("inc/i18n.php");
 	    <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>images/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -262,7 +262,7 @@ include_once("inc/i18n.php");
 		      <p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. The latter does not hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning his own facility, the brewer rents a microbrewery, where he produces his own authnetic beers without additives or artificial flavours."); ?></p>
 		</section>
 		<div class="brewe_sticker">
-			<img src="<?php echo BASE_URL ; ?>images/sticker.png" alt="<?php echo _("Good beer & good brewery"); ?>">
+			<img src="<?php echo BASE_URL ; ?>img/sticker.png" alt="<?php echo _("Good beer & good brewery"); ?>">
 		</div>
 	</div>
 	</div>

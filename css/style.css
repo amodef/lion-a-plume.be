@@ -59,7 +59,7 @@ ul {
 }
 .top_menu li {
 	display: block;
-	background: url(../images/top_menu.png) 0 0 no-repeat;
+	background: url(../img/top_menu.png) 0 0 no-repeat;
 	height: 22px;
 	float: left;
 	width: 233px;
@@ -111,15 +111,15 @@ ul {
 	z-index: -1;
 }
 .intro {
-	background: url(../images/bg_1.jpg) center 0 no-repeat fixed;
+	background: url(../img/bg_1.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
 .slides {
-	background: url(../images/bg_2.jpg) center 0 no-repeat fixed;
+	background: url(../img/bg_2.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
 .brewe {
-	background: url(../images/bg_3.jpg) center 0 no-repeat fixed;
+	background: url(../img/bg_3.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
 
@@ -154,7 +154,7 @@ ul {
 }
 .intro_beers a, .slides_beers a {
 	display: block;
-	background: url("../images/arrow.png") right 0 no-repeat;
+	background: url("../img/arrow.png") right 0 no-repeat;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 10px 0 20px 0;
@@ -218,7 +218,7 @@ ul {
 	font-weight: 700;
 }
 .intro_glass {
-	background:url(../images/intro_glass.png) no-repeat  center bottom transparent;
+	background:url(../img/intro_glass.png) no-repeat  center bottom transparent;
 	width: 19.2em;
 	height: 41.569523em;
 	display: inline-block;
@@ -296,7 +296,7 @@ ul {
 	font-weight: 400;
 	margin-bottom: 2em;
 	height: 3em;
-	background: url('../images/corner.png') 0 1.5em no-repeat;
+	background: url('../img/corner.png') 0 1.5em no-repeat;
 }
 .slides_txt article, .brewe_txt p {
 	line-height: 1.4em;
@@ -310,7 +310,7 @@ ul {
 }
 .slides_dots li a {
 	display: block;
-	background: url(../images/btle_dots.png) -37px -37px no-repeat;
+	background: url(../img/btle_dots.png) -37px -37px no-repeat;
 	height: 37px;
 	width: 37px;
 	float: left;
@@ -395,7 +395,7 @@ ul {
 @media screen and (max-width: 1350px){
 	/* Menu size reduction */
 	.top_menu li {
-		background: url(../images/top_menu2.png) 0 0 no-repeat;
+		background: url(../img/top_menu2.png) 0 0 no-repeat;
 		width: 173px;
 	}
 	.top_menu .t1 {

@@ -1,4 +1,4 @@
-/**  
+/**   
  * Copyright (c) 2007-2010 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com
  * Dual licensed under MIT and GPL.
  * @author Ariel Flesler

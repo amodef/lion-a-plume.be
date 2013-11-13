@@ -35,8 +35,15 @@ include_once("inc/i18n.php");
 			</li> 
 			<li class="t1"><a href="#slides" title="<?php echo _("Our beers"); ?>"><?php echo _("Our beers"); ?></a></li>
 			<li class="t2"><a href="#brewe" title="<?php echo _("The brewery"); ?>"><?php echo _("The brewery"); ?></a></li>
-			<!--<li class="t3"><a href="#resel_bg" title="Resellers">Resellers</a></li>-->
 			<li class="t3"><a href="#conta" title="<?php echo _("Contact"); ?>"><?php echo _("Contact"); ?></a></li>
+		</ul>
+		</nav>
+		<nav class="lang_menu">
+		<ul>
+			<li class="en"><a href="../en/">EN</a></li>
+			<li class="fr"><a href="../fr/">FR</a></li>
+			<li class="nl"><a href="../nl/">NL</a></li>
+			<li class="it"><a href="../it/">IT</a></li>
 		</ul>
 		</nav>
 	</header>
@@ -221,8 +228,29 @@ include_once("inc/i18n.php");
 	<div id="conta" class="conta bg">
 	<div class="container">
 		<section class="conta_txt"> 
-		      <h1><?php echo _("Our location"); ?></h1>
-		      <p><?php echo _("We are brewing in the small village of Belleau, next to the famous city of Bastogne."); ?></p>
+		      <h1><?php echo _("Say Hello!"); ?></h1>
+		      <form>
+		      	<fieldset class="form_row">
+			      	<label><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
+			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
+
+			      	<label><?php echo _("Email"); ?> <span><?php echo _("(required)"); ?></span></label>
+			      	<input type="email" id="email" name="email" placeholder="john@doeltd.com" required>
+
+			      	<label><?php echo _("Telphone"); ?></label>
+			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91">
+		      	</fieldset>
+
+		      	<fieldset class="form_row">
+		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
+			      	<textarea id="message" name="message" required></textarea>
+		      	</fieldset>
+
+		      	<fieldset>
+		      		<input type="submit" value="<?php echo _("Send"); ?>">
+		      	</fieldset>
+
+		      </form>
 		</section>
 	</div>
 	</div>

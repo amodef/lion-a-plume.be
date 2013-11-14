@@ -149,7 +149,7 @@ include_once("inc/i18n.php");
 			<!-- Carioca -->
 			<section>
 				<div class="slides_btle carioca">
-					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>

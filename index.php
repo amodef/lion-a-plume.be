@@ -12,7 +12,9 @@ include_once("inc/i18n.php");
 	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/normalize.css">
 	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/fonts.css">
 	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/style.css">
-	
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ; ?>css/ie8.css" />
+	<![endif]-->
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->

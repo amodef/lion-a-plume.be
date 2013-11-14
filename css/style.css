@@ -362,7 +362,7 @@ section .slides_txt {
 .brewe_size {
 	max-width: 30%;
 }
-.brewe_txt, .conta_txt {
+.brewe_txt{
 	z-index: 0;
 	padding-top: 15%;
 	margin-left: 10%;
@@ -410,6 +410,12 @@ section .slides_txt {
 }
 
 /* Contact page */
+.conta_txt {
+	z-index: 0;
+	padding-top: 15%;
+	margin-left: 10%;
+	width: 100%;
+}
 .conta_button {
 	font-size: 1.3em;
 	font-weight: 400;
@@ -419,11 +425,13 @@ section .slides_txt {
 	width: 120px;
 	height: 35px;
 	text-align: left;
+	margin-top: 15px;
+	float: right;
+	margin-right: 10px;
 }
 label, input {
 	width:280px;
 	height: 25px;
-	display: block;
 	font-size: .9em;
 	font-weight: 700;
 }
@@ -452,14 +460,14 @@ div.form_column {
 	display: inline-block;
 	float: left;
 	width: 300px;
-	margin-left: 10px;
+	margin-right: 10px;
 	vertical-align: top;
 }
 textarea {
 	resize: none;
 	border: none;
 	width: 285px;
-	height: 90px;
+	height: 194px;
 }
 label, input, textarea, button {
 	float: left;

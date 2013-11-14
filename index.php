@@ -239,7 +239,7 @@ include_once("inc/i18n.php");
 			      	<label><?php echo _("Email"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="email" id="email" name="email" placeholder="john@doeltd.com" required>
 
-			      	<label><?php echo _("Telphone"); ?></label>
+			      	<label><?php echo _("Telephone"); ?></label>
 			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91">
 		      	</div>
 
@@ -252,7 +252,11 @@ include_once("inc/i18n.php");
 		      </form>
 
 		      <div class="form_column">
-		      	<address>Brasserie du Lion à Plume SPRL</address>
+		      	<address>
+		      		Brasserie du Lion à Plume SPRL<br>
+		      		Rue du Cercle 253<br>
+		      		6717 Post (Attert)
+		      	</address>
 		      </div>
 		</section>
 	</div>

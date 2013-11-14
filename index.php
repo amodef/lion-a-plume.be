@@ -149,7 +149,7 @@ include_once("inc/i18n.php");
 			<!-- Carioca -->
 			<section>
 				<div class="slides_btle carioca">
-					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -165,7 +165,7 @@ include_once("inc/i18n.php");
 	    <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>img/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -181,7 +181,7 @@ include_once("inc/i18n.php");
 	    <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>img/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>">
+					<img src="<?php echo BASE_URL ; ?>img/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>

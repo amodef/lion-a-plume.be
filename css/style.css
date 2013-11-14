@@ -269,7 +269,8 @@ ul {
 /* Beers presentation page */
 .slider_container{
 	margin: 0 auto;
-    max-width: 969px;
+    /*max-width: 969px;*/
+    max-width: 1024px;
     width: 100%;
     padding: 1em;
 }

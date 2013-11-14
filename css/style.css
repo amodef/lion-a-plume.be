@@ -293,6 +293,15 @@ ul {
 	height: 100%;
 	width: 100%;
 }
+
+.slider_container section{
+	margin-left: 25%;
+}
+
+.container .slider_container section{
+	background: transparent !important;
+}
+
 .slides_beers {
 	position: absolute;
 	top: 50%;
@@ -304,8 +313,7 @@ ul {
 section .slides_btle {
 	position: absolute;
 	top: 0;
-	left: 25%;
-	width: auto;
+	width: 45%;
 	height: 100%;
 }
 
@@ -325,8 +333,8 @@ section .slides_btle {
 
 section .slides_txt {
 	margin-top: 30%;
-	margin-left: 75%;
-	max-width: 100%;
+	margin-left: 50%;
+	width: 25%;
 	height: auto;
 	
 }

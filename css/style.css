@@ -301,6 +301,16 @@ section .slides_btle {
 	width: auto;
 	height: 100%;
 }
+
+.slides_btle.carioca {
+	background:url('../img/btle_carioca.png') no-repeat;
+	background-position:60% top;
+	width: 969px;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
 .slides_btle img {
 	height: 100%;
 	width: auto;

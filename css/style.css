@@ -266,21 +266,6 @@ ul {
   top: 85px;
 }
 
-/*
-.intro_glass{
-	display: inline-block;
-	padding: 11% 0 0 8%;
-	margin:0 auto;
-	width: 19.2em;
-	height:41.569523em;
-	background-color: transparent;
-}
-.intro_glass img{
-	min-height: 100%;
-	height: 100%
-}
-*/
-
 /* Beers presentation page */
 .slider_container, .slider_container section{
 	z-index: 1;
@@ -398,13 +383,16 @@ section .slides_txt {
 	margin-top: 0px;
 }
 
-input {
-	margin-bottom: 10px;
-	border-style: solid;
-	border: none;
-}
-label {
-	text-transform: uppercase;
+/* Contact page */
+.conta_button {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #fff;
+	background-color: #e11c2d;
+	background: #e11c2d url('../img/white_arrow.png') 86px 6px no-repeat;
+	width: 120px;
+	height: 35px;
+	text-align: left;
 }
 label, input {
 	width:280px;
@@ -413,13 +401,41 @@ label, input {
 	font-size: .9em;
 	font-weight: 700;
 }
+label, .conta_button {
+	text-transform: uppercase;
+}
+input{
+	height: 40px;
+}
+input, .conta_button {
+	margin-bottom: 10px;
+	border-style: solid;
+	border: none;
+	padding-left: 10px;
+}
 label span {
 	color: #cc202f;
 	font-weight: 400;
 	font-size: .9em;
 	text-transform: lowercase;
 }
-.form_row {
+form {
+	width: 100%;
+}
+div.form_column {
+	display: inline-block;
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	vertical-align: top;
+}
+textarea {
+	resize: none;
+	border: none;
+	width: 285px;
+	height: 90px;
+}
+label, input, textarea, button {
 	float: left;
 }
 

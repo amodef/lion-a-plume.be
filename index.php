@@ -230,7 +230,7 @@ include_once("inc/i18n.php");
 		<section class="conta_txt"> 
 		      <h1><?php echo _("Say Hello!"); ?></h1>
 		      <form>
-		      	<fieldset class="form_row">
+		      	<div class="form_column">
 			      	<label><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
 
@@ -239,18 +239,19 @@ include_once("inc/i18n.php");
 
 			      	<label><?php echo _("Telphone"); ?></label>
 			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91">
-		      	</fieldset>
+		      	</div>
 
-		      	<fieldset class="form_row">
+		      	<div class="form_column">
 		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<textarea id="message" name="message" required></textarea>
-		      	</fieldset>
-
-		      	<fieldset>
-		      		<input type="submit" value="<?php echo _("Send"); ?>">
-		      	</fieldset>
+		      		<button class="conta_button" type="button"><?php echo _("Send"); ?></button>
+		      	</div>
 
 		      </form>
+
+		      <div class="form_column">
+		      	<address>Brasserie du Lion à Plume SPRL</address>
+		      </div>
 		</section>
 	</div>
 	</div>

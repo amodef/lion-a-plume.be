@@ -18,8 +18,8 @@ include_once("inc/i18n.php");
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.parallax-1.1.3.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.localscroll-1.2.9-min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.6-min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.cycle-1.3.2.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.projectCode.js"></script>
 </head>
@@ -146,7 +146,7 @@ include_once("inc/i18n.php");
 
 			<!-- Carioca -->
 			<section>
-				<div class="slides_btle">
+				<div class="slides_btle carioca">
 					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>">
 				</div>
 				<div class="slides_txt">

@@ -267,10 +267,26 @@ ul {
 }
 
 /* Beers presentation page */
+.slider_container{
+	margin: 0 auto;
+    max-width: 969px;
+    width: 100%;
+    padding: 1em;
+}
 .slider_container, .slider_container section{
 	z-index: 1;
 	height: 100%;
+	width: 100%;
 }
+
+.slider_container section{
+	margin-left: 25%;
+}
+
+.container .slider_container section{
+	background: transparent !important;
+}
+
 .slides_beers {
 	position: absolute;
 	top: 50%;
@@ -282,20 +298,30 @@ ul {
 section .slides_btle {
 	position: absolute;
 	top: 0;
-	left: 25%;
-	width: auto;
+	width: 45%;
 	height: 100%;
 }
+
+.slides_btle {
+	/*background:url('../img/btle_carioca.png') no-repeat;
+	background-position:center top;*/
+	width: 100%;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
 .slides_btle img {
-	height: 100%;
-	width: auto;
+	height: auto;
+	max-width: 100%;
 }
 
 section .slides_txt {
 	margin-top: 30%;
-	margin-left: 75%;
-	width: 300px;
-	height: 100%;
+	margin-left: 50%;
+	width: 25%;
+	height: auto;
+	
 }
 .slides_txt h1 {
 	font-weight: 200;

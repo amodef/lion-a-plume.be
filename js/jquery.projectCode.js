@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+	// Add active state to menu links
+	$("#nav li").click(function(){
+  	$(this).addClass("menu_active").siblings().removeClass("menu_active");
+	});
+
 	// Parallax effect
 	$('#nav').localScroll(900);
 	

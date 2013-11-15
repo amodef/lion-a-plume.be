@@ -108,6 +108,12 @@ ul {
 	height: 250px;
 	width: 250px;
 }
+li.menu_active {
+	background-position: 0 -24px;
+}
+li.menu_active:first-child {
+	background-position: 0 0;
+}
 
 /* Language menu */
 .lang_menu ul {

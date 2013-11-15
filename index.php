@@ -1,7 +1,7 @@
 <?php
-require_once("inc/config.php");
-include_once("inc/i18n.php");
-include_once("inc/process.php");
+	require_once("inc/config.php");
+	include_once("inc/i18n.php");
+	include_once("inc/process.php");
 ?>
 
 <!doctype html>
@@ -232,7 +232,7 @@ include_once("inc/process.php");
 	<div class="container">
 		<section class="conta_txt"> 
 		      <h1><?php echo _("Say Hello!"); ?></h1>
-		      <form method="post" action="index.php">
+		      <form method="post" action="<?php echo BASE_URL ; ?>index.php">
 		      	<div class="form_column">
 			      	<label><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
@@ -259,6 +259,9 @@ include_once("inc/process.php");
 			      	<p>
 			      		<a href="mailto:info[at]lion-a-plume[dot]be">info@lion-a-plume.be</a>
 			      		+32 (0)497 859 932
+			      	</p>
+			      	<p>
+			      		<?php echo $name ; ?>
 			      	</p>
 			      </div>
 

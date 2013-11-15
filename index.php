@@ -19,7 +19,7 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.parallax-1.1.3.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.localscroll-1.2.9-min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.6-min.js"></script>

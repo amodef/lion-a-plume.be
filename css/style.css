@@ -92,9 +92,11 @@ ul {
 	background-position: 0 -24px;	
 }
 .top_menu li a {
+	display: block;
 	color: #fff;
 	font-size: 0.9em;
 	font-weight: 700;
+	height: inherit;
 }
 .top_menu li:first-child {
 	width: 250px;

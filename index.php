@@ -1,6 +1,7 @@
 <?php
 require_once("inc/config.php");
 include_once("inc/i18n.php");
+include_once("inc/process.php");
 ?>
 
 <!doctype html>
@@ -200,17 +201,17 @@ include_once("inc/i18n.php");
 	<!-- transition 2 -->
 	<div id="tr2" class="transition">
 		<div class="story">
-	        <h1><?php echo _("Small brewery"); ?></h1>
-	      	<h2><?php echo _("Great quality"); ?></h2>
-	    </div>
+      <h1><?php echo _("Small brewery"); ?></h1>
+			<h2><?php echo _("Great quality"); ?></h2>
+    </div>
 	</div>
 	
 	<!-- Brewery presentation -->
 	<div id="brewe" class="brewe bg">
 	<div class="container">
 		<section class="brewe_txt"> 
-		      <h1><?php echo _("The brewery"); ?></h1>
-		      <p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. The latter does not hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning his own facility, the brewer rents a microbrewery, where he produces his own authnetic beers without additives or artificial flavours."); ?></p>
+      <h1><?php echo _("The brewery"); ?></h1>
+			<p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. The latter does not hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning his own facility, the brewer rents a microbrewery, where he produces his own authnetic beers without additives or artificial flavours."); ?></p>
 		</section>
 		<div class="brewe_sticker">
 			<img src="<?php echo BASE_URL ; ?>img/sticker.png" alt="<?php echo _("Good beer & good brewery"); ?>">
@@ -221,9 +222,9 @@ include_once("inc/i18n.php");
 	<!-- tranition 3 -->
 	<div id="tr4" class="transition">
 		<div class="story">
-	        <h1><?php echo _("Contact us"); ?></h1>
-	      	<h2><?php echo _("Where to find us"); ?></h2>
-	    </div>
+      <h1><?php echo _("Contact us"); ?></h1>
+    	<h2><?php echo _("Where to find us"); ?></h2>
+    </div>
 	</div>
 	
 	<!-- Contact form and location -->
@@ -231,7 +232,7 @@ include_once("inc/i18n.php");
 	<div class="container">
 		<section class="conta_txt"> 
 		      <h1><?php echo _("Say Hello!"); ?></h1>
-		      <form>
+		      <form method="post" action="index.php">
 		      	<div class="form_column">
 			      	<label><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
@@ -249,15 +250,19 @@ include_once("inc/i18n.php");
 		      		<button class="conta_button" type="button"><?php echo _("Send"); ?></button>
 		      	</div>
 
-		      </form>
+			      <div class="form_column conta_coord">
+			      	<address>
+			      		Brasserie du Lion à Plume SPRL<br>
+			      		Rue du Cercle 253<br>
+			      		6717 Post (Attert)
+			      	</address>
+			      	<p>
+			      		<a href="mailto:info[at]lion-a-plume[dot]be">info@lion-a-plume.be</a>
+			      		+32 (0)497 859 932
+			      	</p>
+			      </div>
 
-		      <div class="form_column">
-		      	<address>
-		      		Brasserie du Lion à Plume SPRL<br>
-		      		Rue du Cercle 253<br>
-		      		6717 Post (Attert)
-		      	</address>
-		      </div>
+		      </form>
 		</section>
 	</div>
 	</div>

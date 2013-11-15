@@ -427,7 +427,6 @@ section .slides_txt {
 	font-size: 1.3em;
 	font-weight: 400;
 	color: #fff;
-	background-color: #e11c2d;
 	background: #e11c2d url('../img/white_arrow.png') 86px 6px no-repeat;
 	width: 120px;
 	height: 35px;
@@ -437,7 +436,7 @@ section .slides_txt {
 	margin-right: 10px;
 }
 label, input {
-	width:280px;
+	width:100%;
 	height: 25px;
 	font-size: .9em;
 	font-weight: 700;
@@ -460,24 +459,33 @@ label span {
 	font-size: .9em;
 	text-transform: lowercase;
 }
-form {
-	width: 100%;
-}
 div.form_column {
 	display: inline-block;
 	float: left;
-	width: 300px;
-	margin-right: 10px;
+	width: 30%;
+	margin-right: 3%;
 	vertical-align: top;
+}
+div.form_column:last-child {
+	margin-right: 0;
 }
 textarea {
 	resize: none;
 	border: none;
-	width: 285px;
+	width: 100%;
 	height: 194px;
 }
 label, input, textarea, button {
 	float: left;
+}
+address {
+	margin-top: 25px;
+	font-style: normal;
+}
+.conta_coord a {
+	color: #e11c2d;
+	display: block;
+	margin: 10px 0;
 }
 
 /* Media queries medium */

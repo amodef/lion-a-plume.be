@@ -1,5 +1,2 @@
 # I18n (only *.mo files are needed)
 *.po
-
-# Workaround for the test environment
-*~

@@ -26,31 +26,37 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	$mail = new PHPMailer();
 
-	if (!isset($error_message) && $mail->ValidateAddress($email)){
+	if (!isset($error_message) && !$mail->ValidateAddress($email)){
 		$error_message ="You must specify a valid email address.";
 	}
 
 	if (!isset($error_message)) {
-		$body = "";
+		$body = "
+			<!doctype html>
+			<html>
+			<head>
+				<meta charset="utf-8">
+			</head>
+			<body>";
 		$body .= "<b>Name :</b> " . $name . "<br>";
 		$body .= "<b>Email :</b> " . $email . "<br>";
 		if ($_POST["tel"] != ""){
-			$body .= "<b>Tel. :</b>" . $tel . "<br>";
+			$body .= "<b>Tel. : </b>" . $tel . "<br>";
 		}
-		$body .= "<p style=\"padding-top: 30px;\">" . $message . "</p>";
+		$body .= "<p style=\"padding-top: 15px;\">" . $message . "</p></body></html>";
 
 		$mail->IsSMTP();
 		$mail->SMTPAuth = true;
 		$mail->SMTPSecure = "ssl";
 		$mail->Host = "ssl0.ovh.net";
 		$mail->Port = 465;
-		$mail->Username = "postmaster@lion-a-plume.be";
-		$mail->Password = "7gXanFyx";
+		$mail->Username = "info@lion-a-plume.be";
+		$mail->Password = "M3rc@t0r";
 
 		$mail->SetFrom($email,$name);
 		$address = "info@lion-a-plume.be";
 		$mail->AddAddress($address, "Brasserie du Lion à Plume");
-		$mail->Subject    = "Message en provenance du site internet de la part de " . $name;
+		$mail->Subject    = "Message de " . $name . " en provenance du site.";
 		$mail->MsgHTML($body);
 
 		if($mail->Send()) {
@@ -61,6 +67,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		}
 
 	}
-}	
+	header("Location: index.php#conta");
+	exit;
+}
 
 ?>

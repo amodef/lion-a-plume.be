@@ -238,6 +238,11 @@
 
 				<?php }else{ ?>
 		      <h1><?php echo _("Say Hello!"); ?></h1>
+
+		      <?php if (isset($error_message)) {
+		      	echo "<p>" . $error_message . "</p>";
+		      } ?>
+
 		      <form method="post" action="<?php echo BASE_URL ; ?>index.php">
 		      	<div class="form_column">
 			      	<label for="full_name"><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>

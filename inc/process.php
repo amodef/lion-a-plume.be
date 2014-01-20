@@ -30,34 +30,37 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$error_message ="You must specify a valid email address.";
 	}
 
-	$body = "";
-	$body .= "<b>Name :</b> " . $name . "<br>";
-	$body .= "<b>Email :</b> " . $email . "<br>";
-	if ($_POST["tel"] != ""){
-		$body .= "<b>Tel. :</b>" . $tel . "<br>";
+	if (!isset($error_message)) {
+		$body = "";
+		$body .= "<b>Name :</b> " . $name . "<br>";
+		$body .= "<b>Email :</b> " . $email . "<br>";
+		if ($_POST["tel"] != ""){
+			$body .= "<b>Tel. :</b>" . $tel . "<br>";
+		}
+		$body .= "<p style=\"padding-top: 30px;\">" . $message . "</p>";
+
+		$mail->IsSMTP();
+		$mail->SMTPAuth = true;
+		$mail->SMTPSecure = "ssl";
+		$mail->Host = "ssl0.ovh.net";
+		$mail->Port = 465;
+		$mail->Username = "postmaster@lion-a-plume.be";
+		$mail->Password = "7gXanFyx";
+
+		$mail->SetFrom($email,$name);
+		$address = "info@lion-a-plume.be";
+		$mail->AddAddress($address, "Brasserie du Lion à Plume");
+		$mail->Subject    = "Message en provenance du site internet de la part de " . $name;
+		$mail->MsgHTML($body);
+
+		if($mail->Send()) {
+			header("Location: index.php?status=thanks#conta");
+			exit;
+		} else {
+		  $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+		}
+
 	}
-	$body .= "<p style=\"padding-top: 30px;\">" . $message . "</p>";
-
-	$mail->IsSMTP();
-	$mail->SMTPAuth = true;
-	$mail->SMTPSecure = "ssl";
-	$mail->Host = "ssl0.ovh.net";
-	$mail->Port = 465;
-	$mail->Username = "postmaster@lion-a-plume.be";
-	$mail->Password = "7gXanFyx";
-
-	$mail->SetFrom($email,$name);
-	$address = "info@lion-a-plume.be";
-	$mail->AddAddress($address, "Brasserie du Lion à Plume");
-	$mail->Subject    = "Message en provenance du site internet de la part de " . $name;
-	$mail->MsgHTML($body);
-
-	if(!$mail->Send()) {
-	  $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
-	}
-
-	header("Location: index.php?status=thanks#conta");
-	exit;
-	}
+}	
 
 ?>

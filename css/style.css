@@ -215,7 +215,7 @@ li.menu_active:first-child {
 }
 
 .intro_beers a.active_beer, .slides_beers a.active_beer {
-	background-color:red;
+	background-position: right -55px;
 }   
 
 .intro_beers a:hover, .intro_beers a:focus, .slides_beers a:hover, .slides_beers a:focus {

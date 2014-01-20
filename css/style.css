@@ -543,3 +543,17 @@ address {
 		font-size: 2.5em;
 	}
 }
+
+@media screen and (max-height: 700px) {
+	.slides_btle img {
+		 max-width: 78%;
+	}	
+	
+	section .slides_txt {
+	    margin-top: 18%;
+	}
+}
+
+.intro_beers a.active_beer, .slides_beers a.active_beer {
+	background-color:red;
+}

@@ -230,24 +230,36 @@
 	<!-- Contact form and location -->
 	<div id="conta" class="conta bg">
 	<div class="container">
-		<section class="conta_txt"> 
+		<section class="conta_txt">
+				<?php if(isset($_GET["status"]) AND $_GET["status"] == "thanks"){ ?>
+
+					<h1><?php echo _("Thanks for the email!"); ?></h1>
+					<p><?php echo _("We'll be in touch shortly."); ?></p>
+
+				<?php }else{ ?>
 		      <h1><?php echo _("Say Hello!"); ?></h1>
 		      <form method="post" action="<?php echo BASE_URL ; ?>index.php">
 		      	<div class="form_column">
-			      	<label><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
-			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
+			      	<label for="full_name"><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
+			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" value="<?php
+			      		if(isset($_POST["full_name"])){
+			      			echo $name;
+			      		}?>" required>
 
-			      	<label><?php echo _("Email"); ?> <span><?php echo _("(required)"); ?></span></label>
+			      	<label for="email"><?php echo _("Email"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="email" id="email" name="email" placeholder="john@doeltd.com" required>
 
-			      	<label><?php echo _("Telephone"); ?></label>
+			      	<label for="tel"><?php echo _("Telephone"); ?></label>
 			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91">
+		      	
+		      		<label for="address" style="display: none">Address</label>
+			      	<input type="text" id="address" name="address" placeholder="All humans should leave this blank" style="display: none">
 		      	</div>
 
 		      	<div class="form_column">
 		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<textarea id="message" name="message" required></textarea>
-		      		<button class="conta_button" type="button"><?php echo _("Send"); ?></button>
+		      		<button class="conta_button" type="submit"><?php echo _("Send"); ?></button>
 		      	</div>
 
 			      <div class="form_column conta_coord">
@@ -266,6 +278,7 @@
 			      </div>
 
 		      </form>
+		  <?php } ?>
 		</section>
 	</div>
 	</div>

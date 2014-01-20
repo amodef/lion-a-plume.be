@@ -56,7 +56,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$mail->SetFrom($email,$name);
 		$address = "info@lion-a-plume.be";
 		$mail->AddAddress($address, "Brasserie du Lion à Plume");
-		$mail->Subject    = "Message de " . $name . " en provenance du site.";
+		$mail->Subject    = "Message de " . $name . " en provenance du site web.";
 		$mail->MsgHTML($body);
 
 		if($mail->Send()) {

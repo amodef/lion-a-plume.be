@@ -49,6 +49,8 @@ $(document).ready(function(){
 		var num_link = parseInt($(this).data('link'));
 		$('#slider_container').cycle(num_link);
 		$.scrollTo('#slides',900);
+		$('.slides_beers a, .intro_beers a').removeClass("active_beer");
+		$(this).addClass("active_beer");
 		return false;
 	});
 		

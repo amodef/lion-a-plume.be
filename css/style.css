@@ -213,6 +213,11 @@ li.menu_active:first-child {
 	padding: 10px 0 20px 0;
 	height: 35px;
 }
+
+.intro_beers a.active_beer, .slides_beers a.active_beer {
+	background-color:red;
+}   
+
 .intro_beers a:hover, .intro_beers a:focus, .slides_beers a:hover, .slides_beers a:focus {
 	background-position: right -55px;
 }
@@ -553,7 +558,3 @@ address {
 	    margin-top: 18%;
 	}
 }
-
-.intro_beers a.active_beer, .slides_beers a.active_beer {
-	background-color:red;
-}   

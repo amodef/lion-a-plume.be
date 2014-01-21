@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			<!doctype html>
 			<html>
 			<head>
-				<meta charset="utf-8">
+				<meta charset=\"utf-8\">
 			</head>
 			<body>";
 		$body .= "<b>Name :</b> " . $name . "<br>";

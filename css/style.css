@@ -110,7 +110,7 @@ ul {
 	height: 250px;
 	width: 250px;
 }
-li.menu_active {
+.top_menu li.menu_active {
 	background-position: 0 -24px;
 }
 li.menu_active:first-child {

@@ -53,12 +53,20 @@ $(document).ready(function(){
 		$(this).addClass("active_beer");
 		return false;
 	});
-
-	/*
-	// Go to contact form after each sending tryout
-	$('button.conta_button').click(function(){
-		$(document).scrollTop($("#conta").offset().top);
-	});
-	*/
+	
+	$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+        $('.bg').each(function(i) {
+            if ($(this).position().top <= windscroll) {
+                $('#nav li.menu_active').removeClass('menu_active');
+                $('#nav li').eq(i).addClass('menu_active');
+            }
+        });
+    } else {
+        $('#nav li.menu_active').removeClass('menu_active');
+        $('#nav li:first').addClass('menu_active');
+    }
+	}).scroll();
 		
 });

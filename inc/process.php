@@ -56,7 +56,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$mail->SetFrom($email,$name);
 		$address = "info@lion-a-plume.be";
 		$mail->AddAddress($address, "Brasserie du Lion à Plume");
-		$mail->Subject    = "Message de " . $name . " en provenance du site web.";
+		$mail->Subject    = "Message de " . $name . " en provenance du site web";
+		$mail->CharSet = 'utf-8';
 		$mail->MsgHTML($body);
 
 		if($mail->Send()) {
@@ -65,10 +66,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		} else {
 		  $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
 		}
-
 	}
-	header("Location: index.php#conta");
-	exit;
 }
 
 ?>

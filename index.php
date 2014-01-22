@@ -240,10 +240,10 @@
 		      <h1><?php echo _("Say Hello!"); ?></h1>
 
 		      <?php if (isset($error_message)) {
-		      	echo "<p>" . $error_message . "</p>";
+		      	echo "<p class=\"error\">" . $error_message . "</p>";
 		      } ?>
 
-		      <form method="post" action="<?php echo BASE_URL ; ?>index.php">
+		      <form method="post" action="http://www.lion-a-plume.lan/<?php echo $_GET["locale"]; ?>/#conta" novalidate>
 		      	<div class="form_column">
 			      	<label for="full_name"><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" value="<?php
@@ -252,10 +252,16 @@
 			      		}?>" required>
 
 			      	<label for="email"><?php echo _("Email"); ?> <span><?php echo _("(required)"); ?></span></label>
-			      	<input type="email" id="email" name="email" placeholder="john@doeltd.com" required>
+			      	<input type="email" id="email" name="email" placeholder="john@doeltd.com" value="<?php
+			      		if(isset($_POST["email"])){
+			      			echo $email;
+			      		}?>" required>
 
 			      	<label for="tel"><?php echo _("Telephone"); ?></label>
-			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91">
+			      	<input type="tel" id="tel" name="tel" placeholder="+32 4 289 18 91" value="<?php
+			      		if(isset($_POST["tel"])){
+			      			echo $tel;
+			      		}?>">
 		      	
 		      		<label for="address" style="display: none">Address</label>
 			      	<input type="text" id="address" name="address" placeholder="All humans should leave this blank" style="display: none">
@@ -263,7 +269,11 @@
 
 		      	<div class="form_column">
 		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
-			      	<textarea id="message" name="message" required></textarea>
+			      	<textarea id="message" name="message" required><?php
+			      		if(isset($_POST["message"])){
+			      			echo $message;
+			      		}?>
+			      	</textarea>
 		      		<button class="conta_button" type="submit"><?php echo _("Send"); ?></button>
 		      	</div>
 

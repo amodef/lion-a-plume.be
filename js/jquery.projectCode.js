@@ -53,5 +53,12 @@ $(document).ready(function(){
 		$(this).addClass("active_beer");
 		return false;
 	});
+
+	/*
+	// Go to contact form after each sending tryout
+	$('button.conta_button').click(function(){
+		$(document).scrollTop($("#conta").offset().top);
+	});
+	*/
 		
 });

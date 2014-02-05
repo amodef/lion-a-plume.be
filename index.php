@@ -211,10 +211,10 @@
 	<div class="container">
 		<section class="brewe_txt"> 
       <h1><?php echo _("The brewery"); ?></h1>
-			<p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. The latter does not hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning his own facility, the brewer rents a microbrewery, where he produces his own authnetic beers without additives or artificial flavours."); ?></p>
+			<p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. Joined by Stephane Fronzée in 2013, they don't hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning their own facility, the brewers rent a microbrewery, where they produce their own authentic beers without additives or artificial flavours."); ?></p>
 		</section>
 		<div class="brewe_sticker">
-			<img src="<?php echo BASE_URL ; ?>img/sticker.png" alt="<?php echo _("Good beer & good brewery"); ?>">
+			<img src="<?php echo BASE_URL ; ?>img/sticker.png" alt="<?php echo _("Good beer & good quality"); ?>">
 		</div>
 	</div>
 	</div>

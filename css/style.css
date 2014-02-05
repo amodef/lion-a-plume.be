@@ -465,6 +465,7 @@ input, .conta_button {
 	border-style: solid;
 	border: none;
 	padding-left: 10px;
+	margin-right: -4px;
 }
 label span {
 	color: #cc202f;

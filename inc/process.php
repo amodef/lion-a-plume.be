@@ -7,19 +7,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$message = trim($_POST["message"]);
 
 	if($name == "" or $email == "" or $message == ""){
-		$error_message = "You must specify your email address, your name and your message.";
+		$error_message = _('You must specify your email address, your name and your message.');
 	}
 
 	if(!isset($error_message)){
 		foreach ($_POST as $value) {
 			if (stripos($value, 'Content-Type:') !== FALSE) {
-				$error_message = "There was a problem with the information you entered.";
+				$error_message = _('There was a problem with the information you entered.');
 			}
 		}
 	}
 
 	if(!isset($error_message) && $_POST["address"] != ""){
-		$error_message = "Die Robot, die!";
+		$error_message = _('Die Robot, die!');
 	}
 
 	require_once("inc/phpmailer/class.phpmailer.php");
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$mail = new PHPMailer();
 
 	if (!isset($error_message) && !$mail->ValidateAddress($email)){
-		$error_message ="You must specify a valid email address.";
+		$error_message = _('You must specify a valid email address.');
 	}
 
 	if (!isset($error_message)) {
@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			header("Location: /$locale/thanks/#conta");
 			exit;
 		} else {
-		  $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+		  $error_message = sprintf(_('There was a problem sending the email: %s'), $mail->ErrorInfo);
 		}
 	}
 }

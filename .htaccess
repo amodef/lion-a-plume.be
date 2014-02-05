@@ -1,4 +1,6 @@
 SetEnv PHP_VER 5_4
 RewriteEngine On
+
 RewriteRule ^$ /en/ [R=301]
 RewriteRule ^([a-z]{2})/$ /index.php?locale=$1
+RewriteRule ^([a-z]{2})/(thanks)/$ /index.php?locale=$1&status=$2

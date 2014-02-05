@@ -61,7 +61,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$mail->MsgHTML($body);
 
 		if($mail->Send()) {
-			header("Location: index.php?status=thanks#conta");
+			
+			header("Location: /$shortlocale/thanks/#conta");
 			exit;
 		} else {
 		  $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;

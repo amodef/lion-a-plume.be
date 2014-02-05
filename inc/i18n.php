@@ -8,7 +8,7 @@ $locales = array(
 );
 
 if (isset($_GET["locale"])){
-  $locale = $_GET["locale"];
+  $shortlocale = $locale = $_GET["locale"];
 }
 
 $locale = $locales[$locale] . ".UTF-8";

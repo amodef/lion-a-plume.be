@@ -504,10 +504,9 @@ address {
 p.error {
 	margin-bottom: 25px;
 	padding: 5px 10px;
-	background-color: #ff4e03;
-	border-radius: 3px;
-	color: white;
+	color: #e11c2d;
 	width: 61.3%;
+	border: 1px solid #e11c2d;
 	font-weight: 700;
 }
 

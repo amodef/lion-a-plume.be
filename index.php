@@ -243,7 +243,7 @@
 		      	echo "<p class=\"error\">" . $error_message . "</p>";
 		      } ?>
 
-		      <form method="post" action="http://www.lion-a-plume.lan/<?php echo $_GET["locale"]; ?>/#conta" novalidate>
+		      <form method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . "/" . $shortlocale; ?>/#conta" novalidate>
 		      	<div class="form_column">
 			      	<label for="full_name"><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" value="<?php
@@ -269,11 +269,7 @@
 
 		      	<div class="form_column">
 		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
-			      	<textarea id="message" name="message" required><?php
-			      		if(isset($_POST["message"])){
-			      			echo $message;
-			      		}?>
-			      	</textarea>
+			      	<textarea id="message" name="message" required><?php if(isset($_POST["message"])){ echo $message;	}?></textarea>
 		      		<button class="conta_button" type="submit"><?php echo _("Send"); ?></button>
 		      	</div>
 

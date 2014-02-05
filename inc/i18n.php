@@ -8,12 +8,10 @@ $locales = array(
 );
 
 if (isset($_GET["locale"])){
-  $shortlocale = $locale = $_GET["locale"];
+  $locale = $_GET["locale"];
 }
 
-$locale = $locales[$locale] . ".UTF-8";
-
 putenv("LC_ALL=$locale");
-setlocale(LC_ALL, $locale);
+setlocale(LC_ALL, $locales[$locale] . ".UTF-8");
 bindtextdomain("default", "./locale");
 textdomain("default");

@@ -243,7 +243,7 @@
 		      	echo "<p class=\"error\">" . $error_message . "</p>";
 		      } ?>
 
-		      <form method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . "/" . $shortlocale; ?>/#conta" novalidate>
+		      <form method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . "/" . $locale; ?>/#conta" novalidate>
 		      	<div class="form_column">
 			      	<label for="full_name"><?php echo _("Name"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<input type="text" id="full_name" name="full_name" placeholder="John Doe" value="<?php

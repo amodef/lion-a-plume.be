@@ -43,10 +43,10 @@
 		</nav>
 		<nav class="lang_menu">
 		<ul>
-			<li class="en"><a href="../en/">EN</a></li>
-			<li class="fr"><a href="../fr/">FR</a></li>
-			<li class="nl"><a href="../nl/">NL</a></li>
-			<li class="it"><a href="../it/">IT</a></li>
+			<li class="en"><a href="http://<?php echo $_SERVER['HTTP_HOST'] . "/en/"; ?>">EN</a></li>
+			<li class="fr"><a href="http://<?php echo $_SERVER['HTTP_HOST'] . "/fr/"; ?>">FR</a></li>
+			<li class="nl"><a href="http://<?php echo $_SERVER['HTTP_HOST'] . "/nl/"; ?>">NL</a></li>
+			<li class="it"><a href="http://<?php echo $_SERVER['HTTP_HOST'] . "/it/"; ?>">IT</a></li>
 		</ul>
 		</nav>
 	</header>

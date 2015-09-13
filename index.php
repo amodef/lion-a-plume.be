@@ -93,7 +93,7 @@
 					<article>
 						<header>
 							<h1><?php echo _("New website!"); ?></h1>
-							<p>01-06-2013</p>						
+							<p>25-03-2014</p>						
 						</header>
 						<p><?php echo _("Here it is! Our long awaited new website is finally online. We really hope that you'll appreciate it has we do!"); ?></p>
 					</article>

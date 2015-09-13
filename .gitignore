@@ -1,2 +1,6 @@
 # I18n (only *.mo files are needed)
 *.po
+
+# Sublime Text Project Files
+*.sublime-project
+*.sublime-workspace

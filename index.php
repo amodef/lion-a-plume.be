@@ -25,6 +25,7 @@
 	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.6-min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.cycle-1.3.2.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/jquery.projectCode.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js?hl=<?php echo _("en"); ?>'></script>
 </head>
 
 <body>
@@ -262,14 +263,16 @@
 			      		if(isset($_POST["tel"])){
 			      			echo $tel;
 			      		}?>">
-		      	
-		      		<label for="address" style="display: none">Address</label>
-			      	<input type="text" id="address" name="address" placeholder="All humans should leave this blank" style="display: none">
+		      		
+		      		<label for="recaptcha"><?php echo _("Human"); ?></label>
+		      		<div class="g-recaptcha" name="recaptcha" data-sitekey="6LfXyQwTAAAAADxebUrU0RaLiaGg8B6NY5n3s0RY"></div>
+	
 		      	</div>
 
 		      	<div class="form_column">
 		      		<label><?php echo _("Message"); ?> <span><?php echo _("(required)"); ?></span></label>
 			      	<textarea id="message" name="message" required><?php if(isset($_POST["message"])){ echo $message;	}?></textarea>
+		      		
 		      		<button class="conta_button" type="submit"><?php echo _("Send"); ?></button>
 		      	</div>
 

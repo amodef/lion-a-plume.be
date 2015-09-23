@@ -1,7 +1,16 @@
 <?php
-	require_once("inc/config.php");
-	include_once("inc/i18n.php");
-	include_once("inc/process.php");
+
+require_once 'config/app.php';
+require_once 'config/i18n.php';
+
+require_once 'app/SendFormByMail.php';
+
+use App\SendFormByMail;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {    
+    (new SendFormByMail($_POST))->validateRecaptcha()->sendMail();
+}
+
 ?>
 
 <!doctype html>

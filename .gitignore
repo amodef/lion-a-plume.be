@@ -4,3 +4,6 @@
 # Sublime Text Project Files
 *.sublime-project
 *.sublime-workspace
+
+# Composer dependencies
+/vendor

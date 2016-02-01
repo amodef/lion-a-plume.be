@@ -35,9 +35,8 @@ class SendFormByMail
 
     protected function setName($q_name)
     {
-        if ($q_name == ''){
-            $this->error_message = _('Please, give us your name.');
-            return null;
+        if (empty($q_name)){
+            throw new Exception('Please, give us your name.');
         }
         $this->name = trim($q_name);
     }

@@ -1,7 +1,5 @@
 <?php
 
-include(ROOT_PATH . "env.php");
-
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	

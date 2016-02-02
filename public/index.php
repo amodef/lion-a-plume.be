@@ -1,5 +1,6 @@
 <?php
 	require_once("../config.php");
+	require_once(ROOT_PATH . "env.php");
 	include_once(ROOT_PATH . "inc/i18n.php");
 	include_once(ROOT_PATH . "inc/process.php");
 ?>
@@ -265,7 +266,7 @@
 			      		}?>">
 		      		
 		      		<label for="recaptcha"><?php echo _("Human"); ?></label>
-		      		<div class="g-recaptcha" name="recaptcha" data-sitekey="6LfXyQwTAAAAADxebUrU0RaLiaGg8B6NY5n3s0RY"></div>
+		      		<div class="g-recaptcha" name="recaptcha" data-sitekey="<?php echo $env['recaptcha_site_key']; ?>"></div>
 	
 		      	</div>
 

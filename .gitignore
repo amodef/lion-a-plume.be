@@ -4,3 +4,6 @@
 # Sublime Text Project Files
 *.sublime-project
 *.sublime-workspace
+
+# Private keys and settings
+env.php

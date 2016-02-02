@@ -1,14 +1,16 @@
 <?php
 
+include(ROOT_PATH . "env.php");
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	
 	// reCaptcha libraries
-	require_once('inc/recaptcha/autoload.php');
+	require_once(ROOT_PATH . "inc/recaptcha/autoload.php");
 
 	// create new reCaptcha object
-	$siteKey= '6LfXyQwTAAAAADxebUrU0RaLiaGg8B6NY5n3s0RY';
-	$secret = '6LfXyQwTAAAAANcrHgV7PmzAJJMlNgHjrsNcGU-s';
+	$siteKey= $env['recaptcha_site_key'];
+	$secret = $env['recaptcha_private_key'];
 	$recaptcha = new \ReCaptcha\ReCaptcha($secret);
 	
 	// parse form response to variables
@@ -39,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		}
 	}
 
-	require_once("inc/phpmailer/class.phpmailer.php");
+	require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
 
 	$mail = new PHPMailer();
 
@@ -64,16 +66,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 		$mail->IsSMTP();
 		$mail->SMTPAuth = true;
-		$mail->SMTPSecure = "ssl";
-		$mail->Host = "ssl0.ovh.net";
-		$mail->Port = 465;
-		$mail->Username = "info@lion-a-plume.be";
-		$mail->Password = "M3rc@t0r";
+		$mail->SMTPSecure = 'ssl';
+		$mail->Host = $env['mail_host'];
+		$mail->Port = $env['mail_port'];
+		$mail->Username = $env['mail_username'];
+		$mail->Password = $env['mail_password'];
 
 		$mail->SetFrom($email,$name);
 		$address = "info@lion-a-plume.be";
 		$mail->AddAddress($address, "Brasserie du Lion à Plume");
-		$mail->Subject    = "Message de " . $name . " en provenance du site web";
+		$mail->Subject = "Message de " . $name . " en provenance du site web";
 		$mail->CharSet = 'utf-8';
 		$mail->MsgHTML($body);
 

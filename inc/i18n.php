@@ -13,5 +13,5 @@ if (isset($_GET["locale"])){
 
 putenv("LC_ALL=$locale");
 setlocale(LC_ALL, $locales[$locale] . ".UTF-8");
-bindtextdomain("default", "./locale");
+bindtextdomain("default", ROOT_PATH . "locale");
 textdomain("default");

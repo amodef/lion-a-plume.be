@@ -1,7 +1,7 @@
 <?php
-	require_once("inc/config.php");
-	include_once("inc/i18n.php");
-	include_once("inc/process.php");
+	require_once("../config.php");
+	include_once(ROOT_PATH . "inc/i18n.php");
+	include_once(ROOT_PATH . "inc/process.php");
 ?>
 
 <!doctype html>
@@ -10,21 +10,21 @@
 	<meta charset="utf-8">
 	<title><?php echo _("Lion à Plume's brewery"); ?></title>
 
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/normalize.css">
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/fonts.css">
-	<link rel="stylesheet" href="<?php echo BASE_URL ; ?>css/style.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<!--[if lte IE 8]>
-		<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ; ?>css/ie8.css" />
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
 	<![endif]-->
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.parallax-1.1.3.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.localscroll-1.2.9-min.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.scrollTo-1.4.6-min.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.cycle-1.3.2.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/jquery.projectCode.js"></script>
+	<script src="/js/jquery.parallax-1.1.3.js"></script>
+	<script src="/js/jquery.localscroll-1.2.9-min.js"></script>
+	<script src="/js/jquery.scrollTo-1.4.6-min.js"></script>
+	<script src="/js/jquery.cycle-1.3.2.js"></script>
+	<script src="/js/jquery.projectCode.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js?hl=<?php echo _("en"); ?>'></script>
 </head>
 
@@ -35,7 +35,7 @@
 		<nav id="top_menu" class="top_menu">
 		<ul id="nav">
 			<li class="logo">
-				<a href="#intro"><img src="<?php echo BASE_URL ; ?>img/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
+				<a href="#intro"><img src="/img/nav_logo.png" alt="Lion à Plume" title="Lion à Plume"></a>
 			</li> 
 			<li class="t1"><a href="#slides" title="<?php echo _("Our beers"); ?>"><?php echo _("Our beers"); ?></a></li>
 			<li class="t2"><a href="#brewe" title="<?php echo _("The brewery"); ?>"><?php echo _("The brewery"); ?></a></li>
@@ -151,7 +151,7 @@
 			<!-- Carioca -->
 			<section>
 				<div class="slides_btle carioca">
-					<img src="<?php echo BASE_URL ; ?>img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>" width="600px">
+					<img src="/img/btle_carioca.png" alt="<?php echo _("Carioca bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -167,7 +167,7 @@
 	    <!-- Métisse -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>img/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>" width="600px">
+					<img src="/img/btle_metisse.png" alt="<?php echo _("Métisse bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -183,7 +183,7 @@
 	    <!-- Postiche -->
 			<section>
 				<div class="slides_btle">
-					<img src="<?php echo BASE_URL ; ?>img/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>" width="600px">
+					<img src="/img/btle_postiche.png" alt="<?php echo _("Postiche bottle"); ?>" width="600px">
 				</div>
 				<div class="slides_txt">
 					<header>
@@ -215,7 +215,7 @@
 			<p><?php echo _("Lion à Plume is the unusual name of a belgian brewery created in 2009 by a young passionate man, Julien Gascard. Joined by Stephane Fronzée in 2013, they don't hesitate to think outside the box and upset traditions in order to craft new possibilities for the simple, yet complex product of beer. In the hope of one day owning their own facility, the brewers rent a microbrewery, where they produce their own authentic beers without additives or artificial flavours."); ?></p>
 		</section>
 		<div class="brewe_sticker">
-			<img src="<?php echo BASE_URL ; ?>img/sticker.png" alt="<?php echo _("Good beer & good quality"); ?>">
+			<img src="/img/sticker.png" alt="<?php echo _("Good beer & good quality"); ?>">
 		</div>
 	</div>
 	</div>
